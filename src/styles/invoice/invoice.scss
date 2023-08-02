@@ -1,0 +1,230 @@
+@import '../variable/color';
+
+.invoice-icon {
+  height: 1.5rem;
+  width: 1.5rem;
+  cursor: pointer;
+}
+
+.invoice-icon:hover {
+  color: #3689b9;
+}
+
+.invoice-modal-container {
+  width: 27rem;
+  height: 35rem;
+  background-color: white;
+  position: absolute;
+  right: 5rem;
+  top: 4.5rem;
+  border-radius: 1rem;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  box-shadow: 0px 3px 16px rgba(0, 0, 0, 0.1);
+  .header-container {
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 0.1rem solid lightgray;
+    margin-bottom: 1.5rem;
+    border-bottom: 0.1rem solid lightgray;
+    .inner-icon {
+      margin-right: 0.5rem;
+    }
+    p {
+      font-weight: 700;
+      margin-top: 1rem;
+      width: 50%;
+    }
+    .view-all {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      color: #1f83bb;
+      font-size: 0.875rem;
+      font-weight: 600;
+      text-decoration: none;
+    }
+  }
+  .paid-container {
+    width: 100%;
+    height: 5rem;
+    margin-top: 1.5rem;
+    border-radius: 1rem;
+    border: 1px solid $light-grey2;
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    box-shadow: 0px 3px 16px rgba(0, 0, 0, 0.1);
+    .paid {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .icon-paid {
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .icon-check {
+          height: 1.5rem;
+          color: rgb(34, 180, 34);
+        }
+      }
+      .desc-paid {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 0 0 0.5rem;
+        justify-content: center;
+        .desc {
+          margin-bottom: 0;
+          font-size: 0.75rem;
+          color: $dark-grey2;
+          font-weight: 600;
+        }
+        .nominal {
+          margin-top: 0;
+          font-size: 1rem;
+        }
+      }
+    }
+    .unpaid {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .icon-unpaid {
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .exclamation {
+          height: 1.5rem;
+          color: rgb(199, 27, 27);
+        }
+      }
+      .desc-unpaid {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 0 0 0.5rem;
+        justify-content: center;
+        .unpaid-desc {
+          margin-bottom: 0;
+          font-size: 0.75rem;
+          color: $dark-grey2;
+          font-weight: 600;
+        }
+        .nominal-unpaid {
+          margin-top: 0;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+  .list-container {
+    width: 100%;
+    height: 21rem;
+    overflow: scroll;
+    scrollbar-width: none;
+    margin-top: 1rem;
+    -ms-overflow-style: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    .list {
+      width: 100%;
+      margin-bottom: 2rem;
+      cursor: pointer;
+      .detail {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 1rem;
+        width: 100%;
+        margin-bottom: 0.7rem;
+        .icon {
+          font-weight: 5rem;
+        }
+        .list-detail {
+          width: 55%;
+          .numb-inv {
+            margin: 0;
+            font-size: 0.875rem;
+            font-weight: 700;
+          }
+          .detail-order {
+            margin: 0;
+            font-size: 0.875rem;
+          }
+        }
+        .date-invoice {
+          color: lightslategray;
+          font-size: 0.8rem;
+        }
+      }
+      .invoice-payment {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .price {
+          font-size: 0.875rem;
+          font-weight: 700;
+          color: black;
+        }
+        .status-invoice {
+          display: flex;
+          justify-content: flex-end;
+          &.paid {
+            background-color: $green !important;
+          }
+          &.unpaid {
+            background-color: $red !important;
+          }
+        }
+      }
+    }
+    .item-list:hover {
+      background-color: aliceblue;
+    }
+  }
+  .list-container::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+
+@media only screen and (max-width: 767px) {
+  .invoice-nav {
+    display: flex;
+    gap: 0.5rem;
+    .invoice-modal-container {
+      position: fixed;
+      width: 100vw;
+      height: 100vh;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      border-radius: 0 0 0 0;
+      .header-container {
+        justify-content: flex-start;
+        .close-modal {
+          position: absolute;
+          right: 2.5rem;
+          font-size: 1.5rem;
+        }
+      }
+      .list-container {
+        height: 65vh;
+      }
+      .view-all {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        color: #1f83bb;
+        font-size: 0.875rem;
+        font-weight: 600;
+        text-decoration: none;
+      }
+    }
+  }
+  
+}

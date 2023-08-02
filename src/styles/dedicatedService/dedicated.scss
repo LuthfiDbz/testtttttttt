@@ -1,0 +1,119 @@
+@import '../variable/color';
+
+.overlay-dedicated {
+  background-color: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0;
+  .dedicated-container {
+    width: 35vw;
+    height: 95%;
+    background-color: white;
+    border-radius: 1rem;
+    // overflow: scroll;
+    padding-bottom: 1rem;
+    .dedicated-header {
+      border-radius: 1rem 1rem 0 0;
+      position: fixed;
+      z-index: 6;
+      background-color: white;
+      width: inherit;
+      .back-modal {
+        position: absolute;
+        top: 1.4rem;
+        left: 2rem;
+        font-size: 2rem;
+        cursor: pointer;
+      }
+      h5 {
+        text-align: center;
+        margin: 0;;
+        font-size: 1rem;
+        font-weight: 600;
+        padding-block: 2rem;
+      }
+      .close-modal {
+        position: absolute;
+        top: 1.4rem;
+        right: 2rem;
+        font-size: 2rem;
+        cursor: pointer;
+      }
+    }
+    .dedicated-footer {
+      position: fixed;
+      bottom: 0;
+      padding: 1rem 2rem 1.5rem;
+      width: inherit;
+      margin-bottom: 1.5%;
+      border-radius: 0 0 1rem 1rem;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      background-color: white;
+      z-index: 99998;
+      .total-cost-order {
+        margin-bottom: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        div {
+          h5 {
+            font-size: 0.875rem;
+            font-weight: 600;
+          }
+          .payment-method {
+            font-size: 0.875rem;
+            border-radius: 0.3rem;
+            padding: 0.1rem 0.5rem;
+            background-color: $primary2-color;
+            color: white;
+            width: fit-content;
+          }
+        }
+        h4 {
+          margin: 0;
+          font-weight: 600;
+          font-size: 1.125rem;
+        }
+      }
+      .order-btn {
+        background-color: $primary2-color;
+        color: white;
+        width: 100%;
+        font-size: 0.875rem;
+        padding-block: 0.7rem;
+        z-index: 99999;
+        &:hover {
+          background-color: $primary3-color;
+        }
+      }
+    }
+  }
+  .dedicated-container::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .overlay-dedicated {
+    .dedicated-container {
+      width: 100vw;
+      height: 100vh;
+      border-radius: 0;
+      padding-bottom: 0;
+      margin-bottom: 0;
+      .dedicated-header {
+        top: 0;
+        border-radius: 0;
+      }
+      .dedicated-footer {
+        margin-bottom: 0;
+        border-radius: 0;
+      }
+    }
+  }
+}

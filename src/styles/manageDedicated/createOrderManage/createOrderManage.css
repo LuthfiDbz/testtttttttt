@@ -1,0 +1,1008 @@
+.create-order-manage {
+  width: inherit;
+  height: 30rem;
+  margin-top: 11rem;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  z-index: 9999;
+  padding: 1rem 1.5rem 1rem;
+}
+.create-order-manage .service.hide {
+  display: none;
+  transition: all 0.5s linear;
+}
+.create-order-manage .service .select-service {
+  padding: 1rem;
+  width: 100%;
+  border: 1px solid #F1F5FB;
+  margin-top: 1rem;
+  border-radius: 1rem;
+}
+.create-order-manage .service .select-service .title-page {
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.create-order-manage .service .select-service .header-select-service {
+  width: 100%;
+  height: 2rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.create-order-manage .service .select-service .header-select-service .text-title {
+  font-weight: 700;
+  margin-top: 0.8rem;
+}
+.create-order-manage .service .select-service .header-select-service .import-btn {
+  width: 6rem;
+  height: 2rem;
+  background-color: #f1f5fb;
+  border-style: none;
+  border-radius: 0.4rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+.create-order-manage .service .select-service .header-select-service .import-btn:hover {
+  background-color: #d9e5f7;
+}
+.create-order-manage .service .select-service .form-service {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.create-order-manage .service .select-service .form-service .sameday-delivery-option {
+  width: 12.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.create-order-manage .service .select-service .form-service .sameday-delivery-option #sameday-delivery {
+  display: none;
+}
+.create-order-manage .service .select-service .form-service .sameday-delivery-option .label-radio {
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 0.875rem;
+}
+.create-order-manage .service .select-service .form-service .sameday-delivery-option .label-radio .icon-sameday-delivery {
+  width: 2.5rem;
+  margin-right: 0.2rem;
+}
+.create-order-manage .service .select-service .form-service .sameday-delivery-option .label-radio.active {
+  color: #1F83BB;
+}
+.create-order-manage .service .select-service .form-service .instant-delivery-option {
+  width: 12.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.create-order-manage .service .select-service .form-service .instant-delivery-option #instant-delivery {
+  display: none;
+}
+.create-order-manage .service .select-service .form-service .instant-delivery-option .label-radio {
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 0.875rem;
+}
+.create-order-manage .service .select-service .form-service .instant-delivery-option .label-radio .icon-instant-delivery {
+  width: 2.5rem;
+  margin-right: 0.2rem;
+}
+.create-order-manage .service .select-service .form-service .instant-delivery-option .label-radio.active {
+  color: #1F83BB;
+}
+.create-order-manage .service .select-service .form-service .superkul-truck-option {
+  width: 12.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.create-order-manage .service .select-service .form-service .superkul-truck-option #superkul-truck {
+  display: none;
+}
+.create-order-manage .service .select-service .form-service .superkul-truck-option .label-radio {
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 0.875rem;
+}
+.create-order-manage .service .select-service .form-service .superkul-truck-option .label-radio .icon-superkul-truck {
+  width: 2.5rem;
+  margin-right: 0.2rem;
+}
+.create-order-manage .service .select-service .form-service .superkul-truck-option .label-radio.active {
+  color: #1F83BB;
+}
+.create-order-manage .service .select-service .form-service .input-wrapper {
+  position: relative;
+}
+.create-order-manage .service .select-service .form-service .input-wrapper img {
+  position: absolute;
+  background-color: white;
+  right: 0.6rem;
+  top: 1.7rem;
+}
+.create-order-manage .service .select-service .form-service .input-text {
+  padding: 0.6rem;
+  box-sizing: border-box;
+  border: 1px solid lightgray;
+  border-radius: 0.8rem;
+  position: relative;
+  width: 12rem;
+  margin: 1rem auto;
+  font-weight: 700;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: "";
+  cursor: pointer;
+}
+.create-order-manage .service .select-service .form-service .label-input {
+  position: absolute;
+  color: grey;
+  top: 0.4rem;
+  z-index: 1;
+  left: 1em;
+  background-color: white;
+  padding: 0 5px;
+  font-size: 0.8rem;
+}
+.create-order-manage .service .select-service .form-service select {
+  background-color: white;
+  font-weight: 700;
+  height: 2.7rem;
+}
+.create-order-manage .service .select-service .form-service select option {
+  font-weight: 400;
+}
+.create-order-manage .service .select-vehicles {
+  padding: 1rem;
+  width: 100%;
+  border: 1px solid #F1F5FB;
+  margin-top: 1rem;
+  border-radius: 1rem;
+}
+.create-order-manage .service .select-vehicles .header-vehicles {
+  width: 25rem;
+  height: 2rem;
+  margin-bottom: 0.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.create-order-manage .service .select-vehicles .header-vehicles .text-title {
+  font-weight: 700;
+  margin-top: 0.8rem;
+}
+.create-order-manage .service .select-vehicles .body-vehicles .vehicles-checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+.create-order-manage .service .select-vehicles .body-vehicles .vehicles-checkbox .check-vehicles {
+  display: none;
+}
+.create-order-manage .service .select-vehicles .body-vehicles .vehicles-checkbox .check-vehicles:checked + .content .check-icon {
+  opacity: 1;
+}
+.create-order-manage .service .select-vehicles .body-vehicles .vehicles-checkbox .check-vehicles:checked + .content + .vehicle-name {
+  color: #1F83BB;
+}
+.create-order-manage .service .select-vehicles .body-vehicles .vehicles-checkbox .custom-vehicles {
+  width: 15%;
+  text-align: center;
+  cursor: pointer;
+}
+.create-order-manage .service .select-vehicles .body-vehicles .vehicles-checkbox .custom-vehicles .content {
+  width: 100%;
+  text-align: center;
+  padding: 0.1rem;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.8rem;
+}
+.create-order-manage .service .select-vehicles .body-vehicles .vehicles-checkbox .custom-vehicles .content .icon-vehicles {
+  width: 4rem;
+}
+.create-order-manage .service .select-vehicles .body-vehicles .vehicles-checkbox .custom-vehicles .content .check-icon {
+  margin-top: -0.6rem;
+  margin-bottom: 0.2rem;
+  opacity: 0;
+}
+.create-order-manage .service .select-vehicles .body-vehicles .vehicles-checkbox .custom-vehicles .vehicle-name {
+  font-size: 1rem;
+}
+.create-order-manage .service .select-vehicles .body-vehicles .additional-service {
+  margin: 2rem 0 1rem 0;
+}
+.create-order-manage .service .select-vehicles .body-vehicles .additional-service .max-capacity {
+  width: 25rem;
+  height: auto;
+  padding: 0.1rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1f83bb;
+  background-color: #f1f5fb;
+  border-radius: 1rem;
+  font-size: 0.8rem;
+}
+.create-order-manage .service .select-vehicles .body-vehicles .additional-service .additional-title {
+  font-weight: 600;
+  margin: 0.8rem auto;
+}
+.create-order-manage .service .select-vehicles .body-vehicles .additional-service .additional-input {
+  display: none;
+}
+.create-order-manage .service .select-vehicles .body-vehicles .additional-service .label-additional-list .additional-list {
+  width: 25rem;
+  padding: 1rem 1rem 0 1rem;
+  box-sizing: border-box;
+  border-radius: 0.5rem;
+  border: 0.1rem solid lightgray;
+  display: flex;
+  font-size: 0.8rem;
+  font-weight: 600;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.create-order-manage .service .select-vehicles .body-vehicles .additional-service .additional-input:checked + label {
+  background-color: #d9e5f7;
+  border: 1px solid #1f83bb;
+  border-radius: 0.5rem;
+}
+.create-order-manage .service .select-vehicles .body-vehicles .hiden-addservice {
+  text-align: center;
+  font-size: 0.8rem;
+  margin-top: 1rem;
+  color: #1f83bb;
+  cursor: pointer;
+}
+.create-order-manage .show-hide-service {
+  text-align: center;
+  font-size: 0.8rem;
+  margin-top: 1rem;
+  color: #1F83BB;
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.create-order-manage .show-hide-service .show-icon {
+  transform: rotate(90deg);
+  width: 1.5rem;
+}
+.create-order-manage .show-hide-service .hide-icon {
+  transform: rotate(-90deg);
+  width: 1.5rem;
+}
+.create-order-manage .input-location {
+  padding: 1rem;
+  height: auto;
+  width: 100%;
+  border: 1px solid #F1F5FB;
+  margin-top: 1rem;
+  margin-bottom: 15rem;
+  border-radius: 1rem;
+}
+.create-order-manage .input-location .header-input-location {
+  width: 100%;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.create-order-manage .input-location .header-input-location .text-title {
+  font-weight: 700;
+  margin-top: 0.8rem;
+}
+.create-order-manage .input-location .header-input-location .add-btn:hover {
+  background-color: #5fb153;
+}
+.create-order-manage .input-location .drop-notice {
+  font-weight: 400;
+  width: 100%;
+  margin-top: 1rem;
+}
+.create-order-manage .input-location .drop-notice.all-dropped {
+  background-color: rgba(81, 176, 68, 0.2274509804) !important;
+  color: #50B044 !important;
+}
+.create-order-manage .input-location .drop-notice.not-all-dropped {
+  background-color: rgba(31, 130, 187, 0.2196078431) !important;
+  color: #1F83BB !important;
+}
+.create-order-manage .input-location .input-field {
+  margin-top: 1rem;
+}
+.create-order-manage .input-location .input-field .input-area {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #E1EAF6;
+  margin-bottom: 1rem;
+  position: relative;
+}
+.create-order-manage .input-location .input-field .input-area .set-as-pick {
+  background-color: #95BDE1 !important;
+  position: absolute;
+  color: #061738;
+  z-index: 99998;
+}
+.create-order-manage .input-location .input-field .input-area .set-as-pick + .input-address input {
+  padding-left: 3rem;
+}
+.create-order-manage .input-location .input-field .input-area .set-as-drop {
+  background-color: #F4CD32 !important;
+  position: absolute;
+  color: #061738;
+  z-index: 99998;
+}
+.create-order-manage .input-location .input-field .input-area .set-as-drop + .input-address input {
+  padding-left: 3rem;
+}
+.create-order-manage .input-location .input-field .input-area .input-address {
+  width: 92%;
+  height: 2.5rem;
+}
+.create-order-manage .input-location .input-field .input-area .input-address input {
+  padding-right: 3.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.create-order-manage .input-location .input-field .input-area .input-address input:focus {
+  outline: none;
+}
+.create-order-manage .input-location .input-field .input-area .input-address .autocomplete-dropdown-container .suggest {
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  background-color: white;
+  cursor: pointer;
+  z-index: 99997;
+  border-top: none !important;
+  padding: 0.5rem 0.5rem;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.create-order-manage .input-location .input-field .input-area .input-address .autocomplete-dropdown-container .suggest span {
+  width: 100%;
+  height: 100%;
+  padding: 0.1rem !important;
+  font-size: 0.875rem;
+  font-weight: 600;
+  font-family: "Urbanist", sans-serif !important;
+}
+.create-order-manage .input-location .input-field .input-area .input-address .autocomplete-dropdown-container .suggest:first-child {
+  border-top: 1px solid black !important;
+}
+.create-order-manage .input-location .input-field .input-area .input-data-full {
+  position: absolute;
+  padding-inline: 3.2rem 3rem;
+  width: 100%;
+  background-color: white;
+  cursor: pointer;
+}
+.create-order-manage .input-location .input-field .input-area .input-data-full .address-label {
+  font-size: 0.875rem;
+  font-weight: 700;
+  margin: 0;
+  width: 90%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.create-order-manage .input-location .input-field .input-area .input-data-full .address-format {
+  font-size: 0.75rem;
+  font-weight: 400;
+  margin: 0;
+  width: 90%;
+  margin-top: 0.2rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #839ABC;
+}
+.create-order-manage .input-location .input-field .input-area .input-data-full .full-data {
+  font-size: 0.75rem;
+  font-weight: 400;
+  margin: 0;
+  margin-top: 0.2rem;
+  width: 90%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #839ABC;
+}
+.create-order-manage .input-location .input-field .input-area .recent-loc {
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  height: 12rem;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  left: 0;
+  top: 3rem;
+  z-index: 99997;
+  padding: 0.3rem 0.8rem 0;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.create-order-manage .input-location .input-field .input-area .recent-loc h6 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #839ABC;
+}
+.create-order-manage .input-location .input-field .input-area .recent-loc .recent-loc-data {
+  border-bottom: 1px solid #E1EAF6;
+  padding-block: 0.5rem;
+  width: 80%;
+  cursor: pointer;
+}
+.create-order-manage .input-location .input-field .input-area .recent-loc .recent-loc-data:last-child {
+  border-bottom: none;
+}
+.create-order-manage .input-location .input-field .input-area .recent-loc .recent-loc-data .address-label {
+  font-size: 0.875rem;
+  font-weight: 700;
+  margin: 0;
+  width: 90%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.create-order-manage .input-location .input-field .input-area .recent-loc .recent-loc-data .address-format {
+  font-size: 0.75rem;
+  font-weight: 400;
+  margin: 0;
+  width: 90%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.create-order-manage .input-location .input-field .input-area .icon {
+  position: absolute;
+  right: 0;
+  display: flex;
+  align-items: center;
+}
+.create-order-manage .input-location .input-field .input-area .icon .search-icon {
+  width: 1.5rem;
+  margin-right: 0.3rem;
+}
+.create-order-manage .input-location .input-field .input-area .icon .saved-address-badge {
+  background-color: #EEEEEE !important;
+  color: #061738 !important;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  margin-right: 0.8rem;
+  cursor: pointer;
+}
+.create-order-manage .input-location .input-field .input-area .icon p {
+  font-size: 0.75rem;
+  margin: 0;
+  margin-right: 0.8rem;
+  cursor: pointer;
+  color: #1F83BB;
+  cursor: pointer;
+}
+.create-order-manage .input-location .input-field .input-area .icon .saved-address-icon {
+  cursor: pointer;
+  margin-bottom: 0.1rem;
+}
+.create-order-manage .input-location .input-field .input-area .icon .delete-icon {
+  font-size: 1.8rem;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+.create-order-manage .input-location .add-loc {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-weight: 700;
+  font-size: 0.875rem;
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.1);
+}
+.create-order-manage .input-location .add-loc:active {
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.1) inset;
+}
+.create-order-manage .toggle-icon {
+  position: absolute;
+  background-color: #1F83BB;
+  border-radius: 50%;
+  padding: 0.3rem;
+  z-index: 99998;
+  top: 40vh;
+  left: 36vw;
+  cursor: pointer;
+}
+.create-order-manage .toggle-icon.close {
+  transform: rotate(180deg);
+}
+
+.detail-create-order {
+  background-color: white;
+  max-height: 100vh;
+  position: absolute;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  top: 10vh;
+  left: 0;
+  z-index: -2;
+  width: inherit;
+  border-radius: 0 2rem 2rem 0;
+  padding: 2rem 2rem 1.5rem 10rem;
+  transition: all 0.5s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.detail-create-order.show-detail {
+  left: 28vw;
+  transition: all 0.5s ease;
+}
+.detail-create-order .detail-header {
+  background-color: white;
+  z-index: 99;
+  top: 0;
+  border-radius: 0 2rem 0 0;
+}
+.detail-create-order .detail-header h1 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.detail-create-order .detail-header .set-as-location {
+  gap: 0.9rem;
+  width: 100%;
+  justify-content: space-between;
+}
+.detail-create-order .detail-header .set-as-location .pickup-point {
+  width: 50%;
+  font-size: 0.75rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0.2rem 0.5rem 0.7rem;
+  gap: 0.3rem;
+  color: #b9b9b9;
+  border-color: #b9b9b9;
+  border-radius: 0.5rem !important;
+}
+.detail-create-order .detail-header .set-as-location .pickup-point.active {
+  background-color: white;
+  color: black;
+  border-color: #1f83bb;
+}
+.detail-create-order .detail-header .set-as-location .pickup-point:hover {
+  background-color: white;
+}
+.detail-create-order .detail-header .set-as-location .pickup-point .set-as-pick-icon {
+  color: #1F83BB;
+}
+.detail-create-order .detail-header .set-as-location .drop-point {
+  width: 50%;
+  font-size: 0.75rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0.2rem 0.5rem 1.2rem;
+  gap: 0.3rem;
+  color: #b9b9b9;
+  border-color: #b9b9b9;
+  border-radius: 0.5rem !important;
+}
+.detail-create-order .detail-header .set-as-location .drop-point.active {
+  background-color: white;
+  color: black;
+  border-color: rgb(255, 196, 1);
+}
+.detail-create-order .detail-header .set-as-location .drop-point:hover {
+  background-color: white;
+}
+.detail-create-order .detail-header .set-as-location .drop-point .set-as-drop-icon {
+  color: #F4CD32;
+}
+.detail-create-order .detail-content {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+.detail-create-order .detail-content .detail-form .detail-data input[type=text] {
+  height: 2.5rem;
+  margin-bottom: 1.5rem;
+  padding-inline: 0.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  border: 1px solid rgba(209, 209, 209, 0.3);
+  width: 100%;
+  font-size: 0.75rem;
+}
+.detail-create-order .detail-content .detail-form .detail-data input[type=text].error {
+  border-color: red;
+}
+.detail-create-order .detail-content .detail-form .detail-data input::placeholder {
+  font-size: 0.75rem;
+}
+.detail-create-order .detail-content .detail-form .detail-data input[type=checkbox] {
+  cursor: pointer;
+  border-radius: 50%;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  margin-right: 0.5rem;
+}
+.detail-create-order .detail-content .detail-form .detail-data .range {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.detail-create-order .detail-content .detail-form .detail-data .range .rc-slider-dot {
+  opacity: 0;
+}
+.detail-create-order .detail-content .detail-form .detail-data .range .rc-slider-mark-text {
+  font-size: 10px;
+}
+.detail-create-order .detail-content .detail-form .detail-data .range h6 {
+  text-align: end;
+  width: 18%;
+  margin: 0;
+  font-size: 0.875rem;
+}
+.detail-create-order .detail-content .detail-form .detail-data label:not(label.bookmark-address, label#temperature-label) {
+  position: absolute;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-left: 1rem;
+  margin-top: -0.6rem;
+  background-color: white;
+  padding: 0 5px;
+}
+.detail-create-order .detail-content .detail-form .detail-data label.bookmark-address {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+.detail-create-order .detail-content .detail-form .detail-data label.bookmark-label {
+  font-size: 3rem;
+}
+.detail-create-order .detail-content .detail-form .detail-data label#temperature-label {
+  font-size: 0.75rem;
+  color: #839ABC;
+  margin-bottom: 0.5rem;
+}
+.detail-create-order .detail-content .detail-form .detail-data p {
+  color: #bf1650;
+  font-size: 0.75rem;
+  margin-top: -1.2rem;
+  margin-bottom: 1rem;
+}
+.detail-create-order .detail-content .detail-form .pickup-packages {
+  margin-bottom: 10rem;
+}
+.detail-create-order .detail-content .detail-form .pickup-packages .packages-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.detail-create-order .detail-content .detail-form .pickup-packages .packages-title h1 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.detail-create-order .detail-content .detail-form .pickup-packages .add-packages-body {
+  position: relative;
+}
+.detail-create-order .detail-content .detail-form .pickup-packages .add-packages-body .package-category {
+  width: 100%;
+  gap: 0.5rem;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.detail-create-order .detail-content .detail-form .pickup-packages .add-packages-body .package-category .package-choices {
+  font-size: 0.75rem;
+  font-weight: 600;
+  background-color: #EEEEEE;
+  color: #b9b9b9;
+  border-color: white;
+  border-radius: 0.5rem !important;
+}
+.detail-create-order .detail-content .detail-form .pickup-packages .add-packages-body .package-category .package-choices.active {
+  color: #1F83BB;
+  border-color: #1F83BB;
+}
+.detail-create-order .detail-content .detail-form .pickup-packages .add-packages-body .package-category .package-choices:hover {
+  border-color: #1F83BB;
+}
+.detail-create-order .detail-content .detail-form .pickup-packages .add-packages-body input[type=text] {
+  height: 2.5rem;
+  margin-bottom: 2rem;
+  padding-inline: 0.8rem;
+  border-radius: 0.5rem;
+  border: none;
+  border: 1px solid rgba(209, 209, 209, 0.3);
+  width: 100%;
+  font-size: 0.75rem;
+}
+.detail-create-order .detail-content .detail-form .pickup-packages .add-packages-body input[type=text]::placeholder {
+  font-size: 0.75rem;
+  opacity: 0.3;
+}
+.detail-create-order .detail-content .detail-form .pickup-packages .add-packages-body input[type=text].error {
+  border-color: red;
+}
+.detail-create-order .detail-content .detail-form .pickup-packages .add-packages-body input#lenght {
+  width: 30%;
+  margin-right: 0.8rem;
+}
+.detail-create-order .detail-content .detail-form .pickup-packages .add-packages-body input#width {
+  width: 30%;
+  margin-right: 0.8rem;
+}
+.detail-create-order .detail-content .detail-form .pickup-packages .add-packages-body input#height {
+  width: 30%;
+}
+.detail-create-order .detail-content .detail-form .pickup-packages .add-packages-body input#package-quantity {
+  margin-bottom: 1rem;
+}
+.detail-create-order .detail-content .detail-form .pickup-packages .add-packages-body input::placeholder {
+  font-size: 0.875rem;
+}
+.detail-create-order .detail-content .detail-form .pickup-packages .add-packages-body input[type=checkbox] {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  margin-right: 0.5rem;
+}
+.detail-create-order .detail-content .detail-form .pickup-packages .add-packages-body .range {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+.detail-create-order .detail-content .detail-form .pickup-packages .add-packages-body .range .rc-slider-dot {
+  opacity: 0;
+}
+.detail-create-order .detail-content .detail-form .pickup-packages .add-packages-body .range h6 {
+  text-align: end;
+  width: 18%;
+  margin: 0;
+  font-size: 0.875rem;
+}
+.detail-create-order .detail-content .detail-form .pickup-packages .add-packages-body label:not(label#temperature-label, label.unit, label:first-child, label.label-error) {
+  position: absolute;
+  font-size: 0.75rem;
+  margin-left: 0.9rem;
+  margin-top: -0.6rem;
+  background-color: white;
+  padding: 0 5px;
+  color: #839ABC;
+}
+.detail-create-order .detail-content .detail-form .pickup-packages .add-packages-body label#temperature-label {
+  font-size: 0.75rem;
+  color: #839ABC;
+  margin-bottom: 1rem;
+}
+.detail-create-order .detail-content .detail-form .pickup-packages .add-packages-body label:first-child {
+  font-size: 0.75rem;
+  color: #839ABC;
+  margin-left: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+.detail-create-order .detail-content .detail-form .pickup-packages .add-packages-body label.unit {
+  position: absolute;
+  background-color: white;
+  margin-left: 3.5rem;
+  margin-top: 0.7rem;
+  color: #839ABC;
+}
+.detail-create-order .detail-content .detail-form .pickup-packages .add-packages-body p {
+  color: #bf1650;
+  position: absolute;
+  font-size: 0.75rem;
+  margin-top: -2rem;
+}
+.detail-create-order .detail-content .detail-form .pickup-packages .add-packages-body label.label-error {
+  width: 6rem;
+  color: #bf1650;
+  position: absolute;
+  font-size: 0.75rem;
+  margin-top: 2.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.detail-create-order .detail-footer {
+  display: flex;
+  position: fixed;
+  width: inherit;
+  left: inherit;
+  background-color: white;
+  justify-content: space-between;
+  padding: 1rem 2.5rem 1.5rem 10.5rem;
+  border-radius: 0 0 2rem 0;
+  gap: 1rem;
+}
+.detail-create-order .detail-footer.fix-bottom {
+  bottom: 0;
+}
+.detail-create-order .detail-footer .back {
+  width: 50%;
+  height: 2.5rem;
+  font-size: 0.875rem;
+  background-color: #e0e0e0;
+  color: black;
+}
+.detail-create-order .detail-footer .back:hover {
+  background-color: #c7c7c7;
+}
+.detail-create-order .detail-footer .save {
+  background-color: #1F83BB;
+  width: 50%;
+  font-size: 0.875rem;
+}
+
+.add-packages-modal {
+  font-family: "Urbanist", sans-serif;
+}
+.add-packages-modal .modal-content {
+  width: 27vw;
+  margin: auto;
+}
+.add-packages-modal .add-packages-header {
+  padding: 2rem;
+  padding-bottom: 0;
+  border: none;
+}
+.add-packages-modal .add-packages-header h1 {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+.add-packages-modal .add-packages-body {
+  padding-inline: 2rem;
+  position: relative;
+}
+.add-packages-modal .add-packages-body #package-category {
+  cursor: pointer;
+  margin-bottom: 2rem;
+  padding-inline: 0.8rem;
+  font-size: 0.875rem;
+  height: 3rem;
+  width: 100%;
+  background-color: white;
+  border: none;
+  border: 1px;
+  border: 1px solid rgba(209, 209, 209, 0.3);
+  border-radius: 0.5rem;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: "";
+}
+.add-packages-modal .add-packages-body #package-category option {
+  padding: 5rem;
+  height: 5rem;
+  margin-top: 5rem;
+}
+.add-packages-modal .add-packages-body .search-package {
+  position: absolute;
+  right: 3rem;
+  margin-top: 0.9rem;
+}
+.add-packages-modal .add-packages-body input[type=text] {
+  height: 3rem;
+  margin-bottom: 2rem;
+  padding-inline: 1rem 2.3rem;
+  border-radius: 0.5rem;
+  border: none;
+  border: 1px solid rgba(209, 209, 209, 0.3);
+  width: 100%;
+  font-size: 0.875rem;
+}
+.add-packages-modal .add-packages-body input#length {
+  width: 30%;
+  margin-right: 0.8rem;
+}
+.add-packages-modal .add-packages-body input#width {
+  width: 30%;
+  margin-right: 0.8rem;
+}
+.add-packages-modal .add-packages-body input#height {
+  width: 30%;
+}
+.add-packages-modal .add-packages-body input#package-quantity {
+  margin-bottom: 1rem;
+}
+.add-packages-modal .add-packages-body input::placeholder {
+  font-size: 0.875rem;
+}
+.add-packages-modal .add-packages-body input[type=checkbox] {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  margin-right: 0.5rem;
+}
+.add-packages-modal .add-packages-body .range {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.add-packages-modal .add-packages-body .range h6 {
+  width: 15%;
+  margin: 0;
+  font-size: 0.875rem;
+}
+.add-packages-modal .add-packages-body .range .form-range::-moz-range-thumb {
+  background-color: #1F83BB;
+  height: 1.3rem;
+  width: 1.3rem;
+}
+.add-packages-modal .add-packages-body .range .form-range::-moz-range-track {
+  background-color: #6EB9E3;
+}
+.add-packages-modal .add-packages-body label:not(label#temperature-label, label.unit) {
+  position: absolute;
+  font-size: 0.75rem;
+  margin-left: 0.9rem;
+  margin-top: -0.6rem;
+  background-color: white;
+  padding: 0 5px;
+  color: #839ABC;
+}
+.add-packages-modal .add-packages-body label#temperature-label {
+  font-size: 0.75rem;
+  color: #839ABC;
+  margin-bottom: 1rem;
+}
+.add-packages-modal .add-packages-body label.unit {
+  position: absolute;
+  background-color: white;
+  margin-left: 3.5rem;
+  margin-top: 0.7rem;
+  color: #839ABC;
+}
+.add-packages-modal .add-packages-footer {
+  border: none;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  gap: 1rem;
+  padding: 2rem;
+  padding-top: 0;
+}
+.add-packages-modal .add-packages-footer button {
+  width: 50%;
+  font-size: 0.875rem;
+  padding-block: 0.8rem;
+  border-radius: 0.7rem;
+  border: none;
+}
+.add-packages-modal .add-packages-footer button.cancel {
+  background-color: #EEEEEE;
+  color: #061738;
+}
+.add-packages-modal .add-packages-footer button.add {
+  background-color: #1F83BB;
+}
+
+/*# sourceMappingURL=createOrderManage.css.map */

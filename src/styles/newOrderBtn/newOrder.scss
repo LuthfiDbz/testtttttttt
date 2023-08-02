@@ -1,0 +1,57 @@
+@import '../variable/color';
+
+.btn-new-order {
+  width: 12rem;
+  height: 2.5rem;
+  background-color: #1f83bb;
+  border-style: none;
+  border-radius: 0.8rem;
+  color: white;
+}
+.btn-new-order:hover {
+  background-color: #3689b9;
+}
+.menu-container-new-order {
+    position: absolute;
+    top: 4.5rem;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2);
+    ul{
+        list-style: none;
+        width: 100%;
+        border-radius: 1rem;
+        margin: 0;
+        padding: 0;
+        .menu-item {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            width: 100%;
+            font-size: 0.875rem;
+            font-weight: 700;
+            padding: 1rem 1rem;
+            img {
+                width: 2rem;
+                margin-right: 0.5rem;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+  .menu-container-new-order {
+    position: relative;
+    top: 0.5rem;
+    box-shadow: none;
+    ul {
+      .menu-item {
+        padding: 0.5rem 1rem;
+      }
+    }
+  }
+}
+
+

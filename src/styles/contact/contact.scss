@@ -1,0 +1,66 @@
+.contact-profile {
+  height: auto;
+  background-color: white;
+  margin-bottom: 1rem;
+  border-radius: 1.5rem;
+  padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  .header-contact {
+    height: 3.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-bottom: 0.1rem solid lightgray;
+    margin-bottom: 1.2rem;
+  }
+  .body-contact{
+    display: flex;
+    align-items: center;
+    .list-contact{
+        width: 23rem;
+        .title-contact{
+            font-size: 0.8rem;
+            color: #5ca3cb;
+            margin: 0;
+            font-weight: 600;
+        }
+    }
+  }
+}
+// .chat {
+//     height: auto;
+//     width: 48.5rem;
+//     background-color: white;
+//     margin-bottom: 5rem;
+//     border-radius: 1.5rem;
+//     padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+//     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+//     .header-chat {
+//       height: 3.5rem;
+//       font-size: 1.1rem;
+//       font-weight: 600;
+//       border-bottom: 0.1rem solid lightgray;
+//       margin-bottom: 1.2rem;
+//     }
+//   }
+
+  @media only screen and (max-width: 767px) {
+    .contact-profile {
+      width: 90%;
+      margin: auto;
+      .body-contact{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100%;
+        .list-contact{
+            width: 100%;
+            .title-contact{
+                font-size: 0.8rem;
+                color: #5ca3cb;
+                margin: 0;
+                font-weight: 600;
+            }
+        }
+      }
+    }
+  }

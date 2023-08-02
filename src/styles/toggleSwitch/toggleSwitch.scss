@@ -1,0 +1,26 @@
+@import '../variable/color';
+
+.toggle-container {
+  width: 2.5rem;
+  height: 1.5rem;
+  border-radius: 1rem;
+  padding: 0.15rem 0.15rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-start;
+  cursor: pointer;
+  .toggle-button {
+    background-color: $dark-grey2;
+    width: 55%;
+    height: 100%;
+    border-radius: 1rem;
+    transition: all 0.2s ease;
+  }
+  &.active {
+    justify-content: flex-end;
+    .toggle-button {
+      background-color: $green;
+      transition: all 0.2s ease;
+    }
+  }
+}

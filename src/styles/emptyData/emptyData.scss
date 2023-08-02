@@ -1,0 +1,17 @@
+@import '../variable/color';
+
+.empty-data-screen {
+  // background-color: red;
+  width: fit-content;
+  margin: auto;
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 1.5rem;
+  .title {
+    font-weight: 700;
+    margin: 0;
+  }
+  .text {
+    font-size: 0.6em;
+  }
+}

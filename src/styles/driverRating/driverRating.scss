@@ -1,0 +1,142 @@
+@import '../variable/color';
+
+.rating-driver {
+  font-family: 'Urbanist', sans-serif;
+  &.loading {
+    cursor: wait;
+  }
+  .modal-content {
+    width: 23vw;
+    margin: auto;
+    margin-top: 20vh;
+    padding-inline: 0;
+    border-radius: 1rem;
+  }
+  .rating-driver-header {
+    padding: 1.5rem;
+    padding-bottom: 0;
+    border: none;
+    h5 {
+      font-size: 1.125rem; 
+      font-weight: 700;
+      margin: 0;
+      margin-inline: auto;
+    }
+  }
+  .rating-driver-body {
+    position: relative;
+    height: fit-content;
+    padding-inline: 0;
+    padding: 1rem 1.8rem;
+    text-align: center;
+    .driver-photo {
+      width: 4rem;
+      height: 4rem;
+      margin-bottom: 1rem;
+      border-radius: 50%;
+    }
+    .driver-name {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 0;
+    }
+    .vehicle-type {
+      font-size: 0.875rem;
+      font-weight: 500;
+      margin-bottom: 1rem;
+    }
+    .stars {
+      margin-bottom: 0.8rem;
+      button {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        &.on {
+          color: $orange;
+        }
+        &.off {
+          color: $dark-grey;
+        }
+        .stars-rate {
+          width: 1.8rem;
+          height: 1.8rem;
+        }
+      }
+    }
+    .text-rate {
+      margin-bottom: 1.5rem;
+      font-size: 0.875rem;
+      font-weight: 700;
+    }
+    .comment {
+      position: relative;
+      input {
+        &[type='text'] {
+          font-size: 0.875rem;
+          height: 2.5rem;
+          margin-bottom: 1.5rem;
+          padding-inline: 0.5rem;
+          border-radius: 0.5rem;
+          border: none;
+          border: 1px solid rgba(209, 209, 209, 0.3);
+          width: 100%;
+        }
+        &::placeholder {
+          font-size: 0.75rem;
+        }
+      }
+      label {
+        position: absolute;
+        font-size: 0.75rem;
+        font-weight: 600;
+        left: 1rem;
+        margin-top: -0.6rem;
+        color: $dark-grey2;
+        background-color: white;
+        padding: 0 5px;
+      }
+    }
+  }
+  .rating-driver-footer {
+    border: none;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding: 1rem;
+    padding-top: 0;
+    .rating-skip {
+      width: 50%;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding-block: 0.7rem;
+      border-radius: 0.5rem;
+      border: none;
+      color: $primary2-color;
+      background-color: $bg-light-grey;
+    }
+    .rating-submit {
+      width: 50%;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding-block: 0.7rem;
+      border-radius: 0.5rem;
+      border: none;
+      background-color: $primary2-color;
+      &.loading {
+        cursor: wait;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .rating-driver {
+    .modal-content {
+      width: 95vw;
+      margin: auto;
+      margin-top: 20vh;
+      padding: 0.5rem;
+      border-radius: 1rem;
+    }
+  }
+}

@@ -1,0 +1,60 @@
+.overlay {
+  background-color: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0;
+}
+.overlay .main-content-cancel {
+  height: 10rem;
+  width: 25rem;
+  background-color: white;
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.overlay .main-content-cancel .title-cancel {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.overlay .main-content-cancel .warning-cancel {
+  margin: 0;
+}
+.overlay .btn-container-cancel {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.overlay .btn-container-cancel .close-btn {
+  height: 2.5rem;
+  width: 7rem;
+  border-style: none;
+  border-radius: 1rem;
+  margin-right: 1rem;
+  color: #1f83bb;
+  font-weight: 600;
+}
+.overlay .btn-container-cancel .close-btn:hover {
+  opacity: 0.5;
+}
+.overlay .btn-container-cancel .btn-save {
+  height: 2.5rem;
+  width: 7rem;
+  border-style: none;
+  border-radius: 1rem;
+  color: white;
+  font-weight: 600;
+  background-color: #eb5757;
+}
+.overlay .btn-container-cancel .btn-save:hover {
+  opacity: 0.5;
+}/*# sourceMappingURL=cancelOrder.css.map */

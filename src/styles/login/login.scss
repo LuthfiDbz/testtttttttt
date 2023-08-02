@@ -1,0 +1,125 @@
+.overlay {
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+}
+  .modalContainer {
+    width: 24.688rem;
+    height: fit-content;
+    position: fixed;
+    top: 20.75rem;
+    right: -3.438rem;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    padding: 3rem 0 0 0;
+  }
+  
+  .closeBtn {
+    position: fixed;
+    top: 1.25rem;
+    right: 1.25rem;
+    cursor: pointer;
+  }
+  .header-login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+    h4{
+        font-weight: 800;
+    }
+    p{
+        font-size: 1rem;
+        color: #3598d1;
+    }
+  }
+  .login-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .input-wrapper {
+      position: relative;
+      .show-password{
+        position: absolute;
+        right: 0.5rem;
+        top: 1.9rem;
+        cursor: pointer;
+      }
+    }
+  
+    .input-text {
+      padding: 0.6rem;
+      box-sizing: border-box;
+      border: 1px solid lightgray;
+      border-radius: 0.8rem;
+      position: relative;
+      width: 20.938rem;
+      margin: 1rem auto;
+    }
+  
+    .label-input {
+      position: absolute;
+      color: grey;
+      top: 0.3rem;
+      z-index: 1;
+      left: 2em;
+      background-color: white;
+      padding: 0 5px;
+      font-size: 0.8rem;
+    }
+    .forgot-password{
+      position: relative;
+      right: -6.6rem;
+      text-decoration: none;
+    }
+    .btn-submit-login{
+      width: 20.938rem;
+      height: 3.125rem;
+      background-color: #1f83bb;
+      border-style: none;
+      margin: 2.813rem 0 2.813rem 0;
+      box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.5);
+    }
+    .direct-signup{
+      p{
+          color: gray;
+      }
+      a{
+          text-decoration: none;
+          color: #1f83bb;
+          font-weight: 600;
+      }
+    }
+    h6 {
+      margin-top: -2rem;
+      margin-bottom: 1rem;
+    }
+    .btn-google {
+      box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.5);
+      padding-block: 0rem;
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .modalContainer {
+      flex-direction: column;
+      top: 0;
+      left: 0;
+      transform: none;
+      width: 100vw;
+      height: 100vh;
+      border-radius: 0 0 0 0;
+      .closeBtn {
+        font-size: 1.5rem;
+      }
+    }
+  }
+  

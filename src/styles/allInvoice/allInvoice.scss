@@ -1,0 +1,292 @@
+@import '../variable/color';
+
+.container-invoice {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .container-title {
+    width: 100%;
+    height: 20rem;
+    padding: 7rem 0 0 7rem;
+    padding: 7rem 200px 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .content-title {
+      h3 {
+        color: white;
+      }
+      .link {
+        display: flex;
+        list-style-type: none;
+        text-decoration: none;
+        padding: 0;
+        li {
+          text-decoration: none;
+          margin: 0;
+          .link-to {
+            text-decoration: none;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+  .invoice-data {
+    position: relative;
+    top: -7rem;
+    width: 100%;
+    height: auto;
+    padding-inline: 200px;
+    box-sizing: border-box;
+    display: flex;
+    
+    .invoice-list {
+      height: auto;
+      width: 100%;
+      padding: 1.5rem;
+      border-radius: 2rem;background-color: white;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      .filtering {
+        display: flex;
+        justify-content: space-between  ;
+        align-items: center;
+        margin-bottom: 1.5rem;
+        gap: 5rem;
+        // background-color: red ;
+        .input-search {
+          width: 265px;
+          .search-invoice {
+            width: 265px;
+            height: 50px;
+            border: 0.1rem solid lightgray;
+            padding: 1rem;
+            border-radius: 0.8rem;
+          }
+
+          .icon-search {
+            width: 30px;
+            height: auto;
+            position: relative;
+            left: 14rem;
+            color: lightgray;
+            top: -2.5rem;
+          }
+        }
+        .reset-container {
+          width: 50%;
+          text-align: end;
+          .reset-filter {
+            color: $primary2-color;
+            margin-left: auto;
+            margin-right: 0;
+            font-weight: 700;
+            border-style: none;
+            height: fit-content;
+            display: flex;
+            align-items: center;
+            background: none;
+            text-align: right;
+          }
+        }
+      }
+      .paid-container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+
+        .paid {
+          height: 5rem;
+          width: 28rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: 0.1rem solid lightgray;
+          border-radius: 1rem;
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+          .icon-paid {
+            height: 3rem;
+            width: 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .icon-check {
+              height: 1.5rem;
+              width: auto;
+              color: rgb(34, 180, 34);
+            }
+          }
+          .desc-paid {
+            height: 3rem;
+            width: 8rem;
+            display: flex;
+            flex-direction: column;
+            padding: 1rem 0 0 0.5rem;
+            justify-content: center;
+            .desc {
+              margin-bottom: 0;
+              font-size: 0.8rem;
+              color: #1f83bb;
+            }
+            .nominal {
+              margin-top: 0;
+            }
+          }
+        }
+        .unpaid {
+          height: 5rem;
+          width: 28rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: 0.1rem solid lightgray;
+          border-radius: 1rem;
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+          .icon-unpaid {
+            height: 3rem;
+            width: 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .exclamation {
+              height: 1.5rem;
+              width: auto;
+              color: rgb(199, 27, 27);
+            }
+          }
+          .desc-unpaid {
+            height: 3rem;
+            width: 8rem;
+            display: flex;
+            flex-direction: column;
+            padding: 1rem 0 0 0.5rem;
+            justify-content: center;
+            .unpaid-desc {
+              margin-bottom: 0;
+              font-size: 0.8rem;
+              color: #1f83bb;
+            }
+            .nominal-unpaid {
+              margin-top: 0;
+            }
+          }
+        }
+      }
+      .list-container {
+        width: 100%;
+        margin-top: 1rem;
+        .link-detail-invoice{
+          text-decoration: none;
+        }
+        .list {
+          border-radius: 1rem;
+          border: 0.1rem solid lightgray;
+          padding: 1rem;
+          margin-bottom: 2rem;
+          cursor: pointer;
+          color: black;
+          .detail {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+            .list-detail {
+              width: 84%;
+              .numb-inv {
+                margin: 1px;
+                font-weight: 800;
+                font-size: 0.875rem;
+              }
+              .detail-order {
+                margin: 0;
+                font-size: 0.875rem;
+              }
+            }
+            .date-invoice {
+              color: lightslategray;
+              font-size: 0.8rem;
+              display: flex;
+              justify-content: flex-end;
+            }
+          }
+          .invoice-payment {
+            width: 100%;
+            height: 1.7rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .price {
+              width: 29rem;
+              height: 1.7rem;
+              font-size: 1rem;
+              font-weight: 700;
+            }
+            .status-invoice {
+              &.unpaid {
+                background-color: $red !important; 
+              }
+              &.paid {
+                background-color: $green !important;
+              }
+            }
+          }
+        }
+        .item-list:hover {
+            background-color: aliceblue;
+          }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container-invoice {
+    .container-title {
+      padding-inline: 1rem;
+      .content-title {
+        h3 {
+          font-size: 1.25rem;
+        }
+        .link {
+          font-size: 0.875rem;
+        }
+      }
+    }
+    .invoice-data {
+      padding-inline: 1rem;
+      .invoice-list {
+        .filtering {
+          flex-direction: column;
+          width: 100%;
+          .input-search {
+            width: 100%;
+            .search-invoice {
+              width: 100%;
+            }
+            .icon-search {
+              left: 19rem;
+            }
+          }
+        }
+        .paid-container {
+          flex-direction: column;
+          gap: 1rem;
+          .paid {
+            width: 100%;
+            justify-content: flex-start;
+            padding-left: 2rem;
+          }
+          .unpaid {
+            width: 100%;
+            justify-content: flex-start;
+            padding-left: 2rem;
+          }
+        }
+      }
+    }
+  }
+}

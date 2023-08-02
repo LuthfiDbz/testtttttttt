@@ -1,0 +1,269 @@
+@import '../variable/color';
+
+.container-transaction {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .container-title {
+    width: 100%;
+    height: 20rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 7rem 120px 0;
+    .content-title {
+      h3 {
+        color: white;
+      }
+      .link {
+        display: flex;
+        list-style-type: none;
+        text-decoration: none;
+        padding: 0;
+        li {
+          text-decoration: none;
+          .link-to {
+            text-decoration: none;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+  .transaction {
+    position: relative;
+    top: -7rem;
+    width: 100%;
+    padding-inline: 120px;
+    .transaction-container-content {
+      background-color: white;
+      border-radius: 1rem;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      box-sizing: border-box;
+      .transaction-menu {
+        border-bottom: 1px solid $dark-grey;
+        .service {
+          border: none;
+          color: $dark-grey1;
+          font-size: 0.875rem;
+          border-radius: 0;
+          padding: 0.8rem 4rem;
+          &:first-child {
+            border-radius: 1rem 0 0 0 ;
+          }
+          &.active {
+            font-weight: 700;
+            border-bottom: 1px solid $primary2-color;
+            color: $primary2-color;
+            background-color: white;
+          }
+          &:hover {
+            background-color: white;
+          }
+        }
+      }
+      .transaction-content {
+        padding: 1.5rem;
+        display: flex;
+        align-items: flex-start;
+        .transaction-sidebar {
+          width: 18%;
+          background-color: $bg-light-grey;
+          margin-right: 1rem;
+          border-radius: 1rem;
+          padding: 1.5rem 1.5rem 0 1.5rem;
+          box-shadow: 0 2px 5px  rgb(224, 224, 224);
+          h4 {
+            font-size: 1.125rem;
+            font-weight: 700;
+          }
+          .sidebar-item{
+            width: 100%;
+            text-align: start;
+            padding-block: 1rem;
+            font-size: 0.875rem;
+            color: gray;
+            border: none;
+            background: none;
+            border-top: 1px solid $dark-grey1;
+            &.active {
+              font-weight: 700;
+              color: $primary2-color
+            }
+          }
+        }
+        .transaction-list {
+          height: auto;
+          width: 80%;
+          .filtering {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+            .filtering-input {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              width: 90%;
+              height: 50px;
+              gap: 1rem;
+              .input-search {
+                width: 30%;
+                height: 100%;
+                border: 0.1rem solid lightgray;
+                border-radius: 0.8rem;
+                .search-transactions {
+                  width: 100%;
+                  height: 100%;
+                  border: none;
+                  padding: 1rem;
+                  border-radius: 0.8rem;
+                }
+                .icon-search {
+                  width: 1.5rem;
+                  height: 1.5rem;
+                  position: absolute;
+                  margin-top: 0.8rem;
+                  margin-left: -2.2rem;
+                  color: lightgray;
+                }
+              }
+              .service-btn-trans{
+                width: 30%;
+                height: 100%;
+                background-color: white;
+                border: 0.1rem solid lightgray;
+                border-radius: 0.8rem;
+                color: gray;
+                padding: 0 1rem 0 1rem;
+                .dropdown-content{
+                  background-color: white;
+                  margin-top: 0.1rem;
+                  height: 9rem;
+                  width: 16.563rem;
+                  border-radius: 0.8rem;
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  flex-direction: column;
+                  padding: 1rem;
+                  .dropdown-item{
+                      display: flex;
+                      align-items: center;
+                      justify-content: flex-start;
+                  }
+                }
+              }
+              .date-range-filter {
+                width: 40%;
+                height: 100%;
+              }
+            }
+            .reset-filter{
+              color: $primary2-color;
+              font-weight: 700;
+              border-style: none;
+              height: 50px;
+              display: flex;
+              align-items: center;
+              background: none;
+            }
+            
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .container-transaction {
+    .container-title {
+      padding: 7rem 1rem 0;
+      .content-title {
+        h3 {
+          font-size: 1.25rem;
+        }
+        .link {
+          font-size: 0.875rem;
+        }
+      }
+    }
+    .transaction {
+      padding-inline: 1rem;
+      .transaction-container-content {
+        .transaction-menu {
+          .service {
+            &:last-child {
+              border-radius: 0 1rem 0 0 ;
+            }
+          }
+        }
+        .transaction-content {
+          flex-direction: column;
+          .transaction-sidebar {
+            width: 100%;
+            display: flex;
+            height: 100%;
+            align-items: stretch;
+            padding: 1rem 1rem 1rem 1rem;
+            h4 {
+              font-size: 0.875rem;
+              margin: 0;
+              margin-right: 0.5rem;
+            }
+            .sidebar-item {
+              text-align: center;
+              font-size: 0.75rem;
+              padding-block: 0;
+              border-top: none;
+              border-left: 1px solid $dark-grey1;
+            }
+          }
+          .transaction-list {
+            width: 100%;
+            .filtering {
+              flex-direction: column;
+              width: 100%;
+              margin-top: 1rem;
+              .filtering-input {
+                flex-direction: column;
+                width: 100%;
+                .input-search {
+                  .search-transactions {
+                    width: 100%;
+                    height: 50px;
+                    padding: 1rem;
+                  }
+        
+                  .icon-search {
+                    width: 30px;
+                    height: auto;
+                    position: relative;
+                    left: 19rem;
+                    color: lightgray;
+                    top: -2.5rem;
+                    &.dedi {
+                      left: 70vw;
+                      top: -2.5rem;
+                    }
+                  }
+                }
+                .service-btn {
+                  margin-top: -2rem;
+                  width: 100%;
+                }
+              }
+              .reset-filter {
+                width: 100%;
+                margin-block: 0 1rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

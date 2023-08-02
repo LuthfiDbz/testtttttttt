@@ -1,0 +1,57 @@
+.banner-container {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../../assets/img/bg-banner2.png");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5rem 0 5rem 2rem;
+  .banner-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .banner-paragraf {
+      color: #849abd;
+    }
+    img {
+      &.playstore-img {
+        cursor: pointer;
+      }
+    }
+  }
+  .image-container {
+    margin: 0 0 0 11rem;
+    width: 24rem;
+    height: 35rem;
+    .banner-img {
+      height: 35rem;
+      width: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .banner-container {
+    padding: 5rem 2rem 5rem 2rem;
+    .banner-text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .banner-paragraf {
+        color: #849abd;
+      }
+    }
+    .image-container {
+      margin: 0 0 0 11rem;
+      width: 24rem;
+      height: 35rem;
+      .banner-img {
+        height: 35rem;
+        width: auto;
+      }
+    }
+  }
+}

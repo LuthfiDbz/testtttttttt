@@ -1,0 +1,35 @@
+.container-features {
+  width: 100%;
+  height: 50rem;
+  background-image: url("../../assets/img/background-features.png");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5.52rem 5.52rem 8rem 5.52rem ;
+  .feature-text {
+    color: grey;
+  }
+  .feature__item {
+    width: 17.188rem;
+    height: 8.75rem;
+    background-color: white;
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem;
+    img {
+      height: 3.5rem;
+      width: auto;
+    }
+    p{
+        color: #357296;
+    }
+  }
+  .feature__item:hover {
+    box-shadow: 5px 5px 13px #d5d5d5, -5px 5px 13px #d5d5d5;
+  }
+}

@@ -1,0 +1,197 @@
+.mitra-page {
+  .hero-container-mitra {
+    width: 100vw;
+    height: fit-content;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: #f8fafc;
+    .row-hero {
+      height: 100vh;
+    }
+    .hero-text {
+      margin: 0 0 0 0;
+      padding: 10rem 0 0 100px;
+      .hero_title {
+        font-weight: 900;
+        font-size: 3.5rem;
+      }
+      .hero-paragraf {
+        color: #1f83bb;
+      }
+      .btn-join-mitra {
+        color: #f1f5fb;
+        background-color: #1f83bb;
+        width: fit-content;
+        height: 50px;
+        padding-inline: 2rem;
+        margin-right: 1rem;
+        border-style: none;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0.8rem;
+        font-weight: 700;
+      }
+      .btn-join-mitra:hover {
+        background-color: cornflowerblue;
+      }
+    }
+    .hero-img-container {
+      height: 100%;
+      .hero-img {
+        height: 42rem;
+        width: 100%;
+      }
+    }
+  }
+  .mitra-features {
+    width: 100%;
+    height: 35rem;
+    background-color: #f8fafc;
+    background-image: url("../../assets/img/img-ornament-ice-right.png");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    padding: 5rem 5.52rem 8rem 5.52rem ;
+    .feature-text {
+      color: grey;
+    }
+    .feature__item {
+      width: 17.188rem;
+      height: 8.75rem;
+      border-radius: 10px;
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 2rem;
+      img {
+        height: 3.5rem;
+        width: auto;
+      }
+      p{
+          color: #357296;
+      }
+    }
+    .feature__item:hover {
+      box-shadow: 5px 5px 13px #d5d5d5, -5px 5px 13px #d5d5d5;
+      background-color: white;
+    }
+  }
+  .mitra-guide {
+    width: 100%;
+    background-color: #f5fcfe;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding-block: 3rem;
+    .column-img {
+      .guide-img {
+        width: 230%;
+        position: relative;
+        left: -11rem;
+      }
+    }
+    .guide-text {
+      .guide-title {
+        font-weight: 700;
+      }
+      .guide-paragraf {
+        color: #9eb2cb;
+      }
+      .guide-list-desc {
+        color: #9eb2cb;
+      }
+    }
+  }
+  .container-partner {
+    background-color: #f8fafc;
+    .card-img {
+      width: 40%;
+      margin-left: 2rem;
+      margin-top: 1.5rem;
+    }
+    a {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .mitra-page {
+    width: 100vw;
+    height: 100vh;
+    .hero-container-mitra {
+      margin-top: 6rem;
+      margin-bottom: 2rem;
+      width: 100%;
+      .hero-text {
+        padding: 0;
+        width: 100%;
+        .hero_content {
+          width: 100%;
+          .hero-content-img {
+            width: 100%;
+            .hero-img {
+              width: 100%;
+            }
+          }
+          .hero_title {
+            font-size: 48px;
+            padding-inline: 16px;
+          }
+          .hero-paragraf {
+            padding-inline: 16px;
+          }
+          .btn-start-delevery {
+            font-size: 0.875rem;
+            margin-inline: 16px;
+          }
+        }
+      }
+      
+    }
+    .mitra-features {
+      width: 100%;
+      height: 50rem;
+      background-image: none;
+      padding: 0;
+      margin-bottom: 0;
+      padding-block: 2.5rem;
+      .feature-text {
+        color: grey;
+      }
+      .features-content {
+        row-gap: 2rem;
+        padding-inline: 16px;
+        .feature__item {
+          width: 100%;
+          height: 10rem;
+        }
+      }
+    }
+    .mitra-guide {
+      margin-top: -10rem;
+      .column-img {
+        width: 100vw;
+        .guide-img {
+          width: 220%;
+        }
+      }
+      .guide-text {
+        .guide-content {
+          .guide-title {
+            text-align: center;
+          }
+        }
+      }
+    }
+    .container-partner {
+      background-color: #f8fafc;
+      .card-img {
+        margin-bottom: 3rem;
+      }
+    }
+  }
+}

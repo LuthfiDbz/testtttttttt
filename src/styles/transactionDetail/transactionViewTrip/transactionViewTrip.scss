@@ -1,0 +1,456 @@
+@import '../../variable/color';
+
+.transaction-view-trip {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .container-title {
+    width: 100%;
+    height: 20rem;
+    padding: 7rem 120px 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .content-title {
+      h3 {
+        color: white;
+      }
+      .link {
+        display: flex;
+        list-style-type: none;
+        text-decoration: none;
+        padding: 0;
+        li {
+          text-decoration: none;
+          .link-to {
+            text-decoration: none;
+            color: white;
+          }
+          &:last-child {
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+  .detail-invoice {
+    position: relative;
+    top: -7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    padding-inline: 120px;
+    gap: 2rem;
+    .left-detail {
+      width: 67%;
+      background-color: white;
+      border-radius: 1.5rem;
+      padding: 1.5rem 1.5rem 2rem 1.5rem;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      .header-detail {
+        height: 5rem;
+        margin-bottom: 2rem;
+        display: flex;
+        justify-content: space-between;
+        .detail {
+          width: 100%;
+          .title {
+            font-size: 1.2rem;
+            font-weight: 600;
+          }
+          .status-badge {
+            font-size: 0.75rem;
+            &.schedule {
+              background-color: $red !important;
+              font-weight: 600;
+            }
+            &.done {
+              background-color: $green !important;
+              font-weight: 600;
+            }
+          }
+          .estimation-actual {
+            display: flex;
+            justify-content: space-between;
+            gap: 1rem;
+            .estimation {
+              width: 100%;
+              margin-top: 1rem;
+              border-radius: 0.5rem;
+              background-color: $dark-grey;
+              font-size: 0.875rem;
+              color: $primary2-color;
+              font-weight: 600;
+              text-align: center;
+              padding-block: 0.2rem;
+            }
+            .actual {
+              width: 100%;
+              margin-top: 1rem;
+              border-radius: 0.5rem;
+              background-color: $dark-grey;
+              font-size: 0.875rem;
+              color: $primary2-color;
+              font-weight: 600;
+              text-align: center;
+              padding-block: 0.2rem;
+            }
+          }
+        }
+      }
+      .maps {
+        margin-top: 3rem;
+        border-radius: 0.5rem;
+        background-color: grey;
+        width: 100%;
+        height: 20rem;
+      }
+      .btn-view-driver {
+        background-color: $primary3-color;
+        color: white;
+        font-weight: 500;
+        font-size: 0.875rem;
+        border-radius: 0.5rem;
+        margin-top: 1rem;
+        margin-left: auto; 
+        margin-right: 0 ;
+      }
+      .driver {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 0 0 2rem 0;
+        border-bottom: 0.1rem solid lightgray;
+        .title {
+          font-weight: 700;
+          font-size: 1.125rem;
+          margin-top: 1.5rem;
+        }
+        .driver-data {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          margin-top: 1rem;
+          .driver-img {
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 50%;
+          }
+          .data {
+            .driver-name {
+              font-size: 0.875rem;
+              font-weight: 700;
+              margin: 0;
+              margin-bottom: 0.5rem;
+            }
+            div {
+              display: flex;
+              align-items: center;
+              gap: 0.5rem;
+              .driver-phone {
+                font-size: 0.875rem;
+                margin: 0;
+              }
+              .driver-vehicle {
+                font-size: 0.875rem;
+                border-inline: 1px solid black;
+                padding-inline: 0.5rem;
+                margin: 0;
+              }
+              .driver-vehicle-number {
+                font-size: 0.875rem;
+                margin: 0;
+              }
+            }
+          }
+        }
+        .driver-rating {
+          width: 25%;
+          .rating-stars {
+            .on {
+              color: $orange;
+            }
+            .off {
+              color: $dark-grey;
+            }
+          }
+          .rating-comment {
+            margin-top: 0.5rem;
+            font-size: 1rem;
+          }
+        }
+      }
+      .information {
+        padding: 0 0 2rem 0;
+        border-bottom: 0.1rem solid lightgray;
+        margin-top: 1rem;
+        .title {
+          font-weight: 700;
+          font-size: 1.125rem;
+          margin-top: 1.5rem;
+        }
+        .content {
+          display: flex;
+          align-items: center;
+          margin-top: 1rem;
+          gap: 3rem;
+          .info-name {
+            width: 100%;
+            h4 {
+              color: $dark-grey2;
+              font-size: 0.875rem;
+              font-weight: 600;
+              margin-bottom: 0.2rem;
+            }
+            .desc {
+              margin-bottom: 0;
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+    }
+    .right-detail {
+      width: 36%;
+      background-color: white;
+      border-radius: 1.5rem;
+      padding: 1.5rem 1rem 1.5rem 1rem;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      .header-right {
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 1rem;
+        .title {
+          font-size: 1.125rem;
+          font-weight: 700;
+          margin: 0;
+        }
+      }
+      .body-right {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin-top: -1rem;
+        .detail-point {
+          width: 10%;
+          padding-top: 2rem;
+          .detail-index {
+            position: relative;
+            margin-top: 1.9rem;
+            margin-bottom: 5rem;
+            &.dropoff {
+              h1 {
+                background-color: #ffd000;
+              }
+            }
+            h1 {
+              margin: 0;
+              font-size: 1.2rem;
+              font-weight: 700;
+              text-align: center;
+              border-radius: 50%;
+              padding: 0.1rem;
+              color: #11567e;
+              background-color: #63b6e6;
+              z-index: 99;
+            }
+            &:first-child {
+              &::before {
+                display: none;
+              }
+            }
+            &::before {
+              content: " ";
+              height: 270%;
+              width: 1px;
+              position: absolute;
+              left: 50%;
+              top: -290%;
+              // z-index: -1;
+              border: 1px dashed #63b6e6;
+            }
+          }
+        }
+        .detail-datas {
+          width: 90%;
+          .trip-point {
+            border: 1px solid #e0e0e0;
+            border-radius: 1rem;
+            padding: 0.6rem 1rem;
+            margin-top: -0.2rem;
+            cursor: pointer;
+            .trip-title {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              gap: 0.5rem;
+              &>div {
+                display: flex;
+                gap: 0.5rem;
+                align-items: center;
+                .trip-name {
+                  font-size: 0.75rem;
+                  font-weight: 700;
+                  margin: 0;
+                }
+                .done {
+                  background-color: $green !important;
+                }
+                .onprogress {
+                  background-color: $bg-light-grey !important;
+                  color: $dark-grey2 ;
+                }
+                .pending {
+                  background-color: $red !important;
+                }
+              }
+              h3 {
+                font-size: 0.75rem;
+                margin: 0;
+              }
+            }
+            .loc-name {
+              font-size: 0.875rem;
+              font-weight: 700;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+            .loc-address {
+              font-size: 0.75rem;
+              width: 70%;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+            // &:nth-child(odd) {
+            //   .trip-title {
+            //     h3{
+            //       display: none;
+            //     }
+            //   }
+            // }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .transaction-view-trip {
+    .container-title {
+      padding: 7rem 1rem 0;
+      .content-title {
+        h3 {
+          font-size: 1.25rem;
+        }
+      }
+      .link {
+        font-size: 0.75rem;
+      }
+    }
+    .detail-invoice {
+      padding-inline: 1rem;
+      flex-direction: column;
+      justify-content: center;
+      .left-detail {
+        width: 100%;
+        .header-detail {
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          flex-direction: column;
+          .detail {
+            .title {
+              font-size: 1rem;
+            }
+            .invoice-number {
+              font-size: 0.875rem;
+            }
+          }
+          .payment-badge {
+            font-size: 0.625rem;
+          }
+        }
+        .order-information {
+          .title {
+            margin-top: 3rem;
+            font-size: 0.875rem;
+          }
+          .order-info-content {
+            .date-pickup {
+              width: 30%;
+              .desc {
+                font-size: 0.75rem;
+              }
+            }
+            .time-pickup {
+              .desc {
+                font-size: 0.75rem;
+              }
+            }
+            .total-trips {
+              .desc {
+                font-size: 0.75rem;
+              }
+            }
+          }
+        }
+        .service-information {
+          .title {
+            font-size: 0.875rem;
+          }
+          .service-info-content {
+            .service-type {
+              .desc {
+                font-size: 0.75rem;
+              }
+            }
+            .vehicles-type {
+              .desc {
+                font-size: 0.75rem;
+              }
+            }
+          }
+        }
+        .list-trip {
+          .list-item-unpaid {
+            .header {
+              .list-information {
+                gap: 0.5rem;
+                .address-name {
+                  font-size: 0.875rem;
+                }
+              }
+            }
+          }
+        }
+      }
+      .driver {
+        width: 100%;
+        .driver-rating {
+          width: 100% !important;
+        }
+      }
+      .right-detail {
+        margin: auto;
+        width: 90%;
+        .header-right {
+          &>div {
+            .title {
+              font-size: 1rem;
+            }
+            .payment-detail {
+              font-size: 0.75rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

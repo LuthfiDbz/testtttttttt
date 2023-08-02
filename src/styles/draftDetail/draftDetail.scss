@@ -1,0 +1,189 @@
+@import '../variable/color';
+
+.draft-detail {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 0;
+
+  // Loading Map Screen 
+  .loading-map-screen {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    opacity: 0.3;
+    z-index: 99999;
+    position: absolute;
+    cursor: wait;
+  }
+
+  .order-side {
+    height: 100vh;
+    position: absolute;
+    width: 37vw;
+    background-color: #ffffff;
+    border-radius: 0 2rem 2rem 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+
+    // Header
+    .header-order {
+      width: inherit;
+      position: fixed;
+      left: 0;
+      top: 0;
+      padding-block: 2rem 1rem;
+      padding-inline: 1.5rem;
+      background-color: white;
+      z-index: 999;
+      .title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .home-btn {
+          width: 2rem;
+          height: 2rem;
+          background-color: #f1f5fb;
+          color: #1f83bb;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+        .home-btn:hover {
+          width: 2rem;
+          height: 2rem;
+          background-color: #f1f5fb;
+          color: #18608a;
+          border-radius: 5px;
+        }
+        .title-text {
+          width: 25rem;
+          height: auto;
+          margin: 0;
+          text-align: center;
+          font-size: 1rem;
+          font-weight: 700;
+        }
+        &>img {
+          width: 1.3rem;
+          height: 1.3rem;
+          cursor: pointer;
+        }
+      }
+    }
+
+    // Force Style tripPlanning from here
+    .trip-planning {
+      .order-side {
+        margin-top: 2rem !important;
+      }
+    }
+    
+    // Footer
+    .footer-order {
+      position: fixed;
+      width: inherit;
+      left: 0;
+      bottom: 0;
+      background-color: $bg-grey;
+      border-radius: 0;
+      padding: 1rem 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.7rem;
+      button {
+        width: 100%;
+        padding-block: 1rem;
+        font-size: 0.875rem;
+        font-weight: 600;
+        border-radius: 0.7rem;
+        &.btn-primary {
+          background-color: #0086d3 !important;
+          border: none;
+        }
+      }
+      .total-cost-trip {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h5 {
+          margin: 0;
+          font-size: 1rem;
+          font-weight: 700;
+        }
+        h4 {
+          margin: 0;
+          font-size: 1.25rem;
+          font-weight: 700;
+        }
+      }
+      .total-cost-order {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        h5 {
+          margin: 0;
+          font-size: 1rem;
+          font-weight: 700;
+        }
+        .payment-method {
+          margin-top: 0.8rem;
+          background-color: #18608a;
+          color: white;
+          width: fit-content;
+          font-size: 1rem;
+          font-weight: 600;
+          border-radius: 0.5rem;
+          padding: 0.05rem 0.8rem;
+        }
+        h4 {
+          margin: 0;
+          font-size: 1.25rem;
+          font-weight: 700;
+        }
+      }
+      .confirmation-button {
+        display: flex;
+        gap: 1rem;
+      }
+    }
+  }
+
+  // ! MAPS
+  .maps-side{
+    z-index: -999;
+    width: 100%;
+    height: 100vh;
+    .navbar-maps{
+        width: 100%;
+        height: 5rem;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img{
+            height: 3rem;
+            width: auto;
+            margin-left: 30rem;
+        }
+    }
+    .maps-view{
+        width: 100%;
+        height: 100vh;
+        .maps {
+          width: 100%;
+          height: 100vh;
+          padding-left: 25vw;
+        }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .draft-detail {
+    .order-side {
+      width: 100vw;
+    }
+  }
+}

@@ -1,0 +1,193 @@
+@import '../../variable/color';
+
+.swal-wide {
+  width: 22vw !important;
+  font-size: smaller;
+  font-weight: 700;
+  color: black;
+}
+
+.swal-wide-2 {
+  width: 22vw !important;
+  font-size: smaller;
+  font-weight: 700;
+  color: black;
+}
+
+// .swal-title {
+//   font-size: 1.125rem;
+//   font-weight: 700;
+// }
+
+// .swal-text {
+//   font-size: 0.875rem;
+//   font-weight: 600;
+// }
+
+.order-confirmation-dedicated {
+  .order-side {
+    padding-inline: 1.5rem;
+    margin-top: 2rem;
+    width: inherit;
+    height: 77vh;
+    border-radius: 0 2rem 0 0;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    .order-info {
+      .title {
+        font-size: 1rem;
+        font-weight: 700;
+        margin-top: 3.5rem;
+        margin-bottom: 1rem;
+      }
+      div {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0.4rem;
+        h3 {
+          font-size: 0.875rem;
+        }
+      }
+    }
+    .service-info {
+      .title {
+        font-size: 1rem;
+        font-weight: 700;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+      }
+      div {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0.4rem;
+        h3 {
+          font-size: 0.875rem;
+        }
+      }
+    }
+    .cost-order {
+      .title {
+        font-size: 1rem;
+        font-weight: 700;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+      }
+      div {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0.4rem;
+        h3 {
+          font-size: 0.875rem;
+          &:nth-child(2) {
+            font-weight: 700;
+          }
+        }
+      }
+    }
+    .additional-service {
+      .title {
+        font-size: 1rem;
+        font-weight: 700;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+      }
+      div {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0.4rem;
+        h3 {
+          font-size: 0.875rem;
+          &:nth-child(2) {
+            font-weight: 700;
+          }
+        }
+      }
+    } 
+    .promo-code {
+      .title {
+        font-size: 1rem;
+        font-weight: 700;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+      }
+      .promo-form {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0.4rem;
+        .promo-icon {
+          position: absolute;
+          margin-top: 0.7rem;
+          margin-left: 0.5rem;
+        }
+        .promo-input {
+          width: 80%;
+          padding-left: 2.4rem;
+          background-color: #f7f7f7;
+          border: none;
+          border-radius: 0.5rem;
+        }
+        .remove-icon {
+          position: absolute;
+          margin-top: 0.7rem;
+          right: 6.5rem;
+          cursor: pointer;
+        }
+        .promo-button {
+          font-size: 0.875rem;
+          font-weight: 700;
+          color: #11567e;
+          padding: 0.7rem 1.3rem;
+          border: 1px solid #11567e;
+          &:hover {
+            background-color: #11567e;
+            color: white;
+          }
+        }
+      }
+      .promo-success {
+        display: flex;
+        background-color: rgba(176, 252, 166, 0.438);
+        align-items: center;
+        justify-content: center;
+        gap: 0.3rem;
+        padding-block: 0.3rem;
+        border-radius: 0.5rem;
+        img {
+          width: 1rem;
+        }
+        h4 {
+          font-size: 0.75rem;
+          font-weight: 700;
+          color: $green;
+          margin: 0;
+        }
+      }
+    }
+    .subtotal-info {
+      margin-bottom: 7rem;
+      margin-top: 2rem;
+      div {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0.4rem;
+        h3 {
+          font-size: 0.875rem;
+          &:nth-child(2) {
+            font-weight: 700;
+          }
+        }
+      }
+      .promo {
+        h3 {
+          color: $green;
+        }
+      }
+    } 
+  }
+}
+
