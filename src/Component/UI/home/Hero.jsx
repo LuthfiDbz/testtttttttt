@@ -4,7 +4,6 @@ import heroImg from "../../../assets/img/heroimg.png";
 import ConfirmIcon from "../../../assets/img/img-state-confirmation.png";
 
 import React, { useContext, useEffect, useState } from "react";
-import { DedicatedService } from "../modal/DedicatedService";
 import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 import axios from "axios";
@@ -51,7 +50,7 @@ export const Hero = () => {
   // };
 
   const authDedicated = () => {
-    if(isMobile || window.innerWidth <= 768) return toggleRedirectApp()
+    if (isMobile || window.innerWidth <= 768) return toggleRedirectApp()
 
     if (!sessionStorage.getItem("token")) {
       Swal.fire({
@@ -72,19 +71,19 @@ export const Hero = () => {
     auth_context.userType === 3
       ? setOpenModal(true)
       : Swal.fire({
-          title: t("notCorporateAccount"),
-          // Maaf, akun kamu belum terdaftar sebagai akun corporate
-          imageUrl: ConfirmIcon,
-          showConfirmButton: true,
-          confirmButtonColor: "#1F83BB",
-          confirmButtonText: t("close"),
-          customClass: {
-            popup: "popup-swal",
-            title: "title-swal",
-            htmlContainer: "text-swal",
-            confirmButton: "confirm-swal",
-          },
-        });
+        title: t("notCorporateAccount"),
+        // Maaf, akun kamu belum terdaftar sebagai akun corporate
+        imageUrl: ConfirmIcon,
+        showConfirmButton: true,
+        confirmButtonColor: "#1F83BB",
+        confirmButtonText: t("close"),
+        customClass: {
+          popup: "popup-swal",
+          title: "title-swal",
+          htmlContainer: "text-swal",
+          confirmButton: "confirm-swal",
+        },
+      });
   };
 
   const handleDelivery = () => {
@@ -95,7 +94,7 @@ export const Hero = () => {
       // value: 99
     });
 
-    if(isMobile || window.innerWidth <= 768) return toggleRedirectApp()
+    if (isMobile || window.innerWidth <= 768) return toggleRedirectApp()
 
     if (!sessionStorage.getItem("token")) {
       Swal.fire({
@@ -117,6 +116,12 @@ export const Hero = () => {
     }
   };
 
+  const handleDeliverNow = () => {
+    if (isMobile || window.innerWidth <= 768) return toggleRedirectApp()
+
+    window.open(`${process.env.REACT_APP_WEB_URL}/login`, '_blank');
+  }
+
   return (
     <div className="hero-container">
       <Container>
@@ -133,16 +138,11 @@ export const Hero = () => {
               <div className="d-flex align-items-center gap-2 mt-4 justify-content-center justify-content-md-start">
                 <Button
                   className="btn-start-delevery d-flex"
-                  onClick={handleDelivery}
+                  onClick={handleDeliverNow}
+                // href={`${process.env.REACT_APP_WEB_URL}/login`}
+                // target="_blank"
                 >
                   {t("homeSection.startDelivery")}
-                </Button>
-
-                <Button
-                  className="btn-dedicated-service d-flex"
-                  onClick={authDedicated}
-                >
-                  {t("homeSection.dedicatedService")}
                 </Button>
               </div>
             </div>
@@ -155,8 +155,7 @@ export const Hero = () => {
           </Col>
         </Row>
       </Container>
-      <DedicatedService open={openModal} onClose={() => setOpenModal(false)} />
-      <RedirectApp isOpen={openRedirectApp} toggle={toggleRedirectApp}/>
+      <RedirectApp isOpen={openRedirectApp} toggle={toggleRedirectApp} />
     </div>
   );
 };

@@ -9,49 +9,21 @@ import {
 import { AuthContext } from "../Component/authContext/AuthContext";
 import { Header } from "../Component/header/Header";
 import { Home } from "../Pages/Home";
-import { DeliveryService } from "../Pages/DeliveryService";
-import { ManageDedicated } from "../Pages/ManageDedicated";
 import { PromoDetail } from "../Pages/PromoDetail";
-import { Register } from "../Pages/Register";
-import { RequestCoorporate } from "../Pages/RequestCoorporate";
-import { Transaction } from "../Pages/Transaction";
-import { DraftDetail } from "../Pages/DraftDetail";
-import { Footer } from "../Component/footer/Footer";
-import { Profile } from "../Pages/Profile";
-import { EditProfile } from "../Component/UI/profile/EditProfile";
-import { EditPassword } from "../Component/UI/profile/EditPassword";
-import { SavedAddress } from "../Component/UI/profile/SavedAddress";
-import { Contact } from "../Component/UI/profile/Contact";
-import { TicketComplain } from "../Component/UI/profile/TicketComplain";
-import { TransactionDetail } from "../Pages/TransactionDetail";
-import { TransactionViewTrip } from "../Pages/TransactionViewDetail";
 import { useContext } from "react";
-import { EmailVerification } from "../Pages/EmailVerification";
 import { PrivacyPolicy } from "../Pages/PrivacyPolicy";
 import { fetchToken } from "../Component/firebaseNotification/firebase";
-import { DeliveryTripPlanning } from "../Pages/DeliveryTripPlanning";
-import { DeliveryOrderConfirm } from "../Pages/DeliveryOrderConfirm";
-import { ManageOrderConfirm } from "../Pages/ManageDedicated/ManageOrderConfirm";
-import { ManageTripPlanning } from "../Pages/ManageDedicated/ManageTripPlanning";
 import { NotFoundPage } from "../Pages/ErrorPage/ErrorPage";
 import { ChangeLanguage } from "../Component/UI/profile/ChangeLanguage";
-import { UpdatePassword } from "../Pages/UpdatePassword";
 import { AboutUs } from "../Pages/AboutUs";
 import { TermsAndConditions } from "../Pages/TermsAndConditions";
 import { FaqPage } from "../Pages/Faq";
-// import { ContactUs } from "../Pages/ContactUs";
-import { TransactionDetailDedicated } from "../Pages/TransactionDetailDedicated";
 import { DriverPage } from "../Pages/DriverPage/DriverPage";
 import { MitraPage } from "../Pages/MitraPage/MitraPage";
 import { TermConditionsDriver } from "../Pages/TermConditionsDriver";
-import { SavedPackages } from "../Component/UI/SavedPackages";
-import { LoginPage } from "../Pages/LoginPage";
-import { ApiKey } from "../Component/UI/profile/ApiKey";
-import { LoginPageDataProfile } from "../Pages/LoginPageDataProfile";
 import { ComingSoon } from "../Pages/ComingSoon";
-import { TransactionClone } from "../Pages/TransactionClone";
-import DetailInvoiceIndex from "../Pages/Invoice/DetailInvoice/index";
-import AllInvoiceIndex from "../Pages/Invoice/AllInvoice/index";
+import { EmailVerification } from "../Pages/EmailVerification";
+import { UpdatePassword } from "../Pages/UpdatePassword";
 // import { ProtectedRoute } from './ProtectedRoute'
 
 export const Routers = () => {
@@ -64,14 +36,14 @@ export const Routers = () => {
     return <Outlet />;
   };
 
-  const [isTokenFound, setTokenFound] = useState("");
-  if (auth.status === false) {
-    fetchToken(setTokenFound);
-  }
+  // const [isTokenFound, setTokenFound] = useState("");
+  // if (auth.status === false) {
+  //   fetchToken(setTokenFound);
+  // }
 
-  useEffect(() => {
-    auth.storeTokenFcm(isTokenFound)
-  }, [isTokenFound])
+  // useEffect(() => {
+  //   auth.storeTokenFcm(isTokenFound)
+  // }, [isTokenFound])
 
   const LoggingEnv = () => {
     const env = {
@@ -88,15 +60,15 @@ export const Routers = () => {
 
   return (
     <BrowserRouter>
-      <Header notifToken={isTokenFound} />
+      <Header />
       <Routes>
         <Route path="/" element={<Navigate to="home" />} />
         <Route path="home" element={<Home />} />
         <Route path="driver" element={<DriverPage />} />
         <Route path="mitra" element={<MitraPage />} />
-        <Route path="login" element={<LoginPage />} />
-        <Route path="login/profile-data" element={<LoginPageDataProfile />} />
-        <Route path="register" element={<Register />} />
+        {/* <Route path="login" element={<LoginPage />} />
+        <Route path="login/profile-data" element={<LoginPageDataProfile />} /> */}
+        {/* <Route path="register" element={<Register />} /> */}
         <Route path="privacy-policy" element={<PrivacyPolicy />} />
         <Route path="about-us" element={<AboutUs />} />
         <Route path="terms-conditions" element={<TermsAndConditions />} />
@@ -105,10 +77,10 @@ export const Routers = () => {
         <Route path="promo/:id" element={<PromoDetail />} />
         <Route path="4nv1t3st" element={<LoggingEnv />} />
         {/* <Route path="contact-us" element={<ContactUs />} /> */}
-        <Route path="email/verify" element={<EmailVerification />} />
-        <Route path="update-password" element={<UpdatePassword />} />
+        {/* <Route path="email/verify" element={<EmailVerification />} />
+        <Route path="update-password" element={<UpdatePassword />} /> */}
         <Route path="coming-soon" element={<ComingSoon />} />
-        <Route element={<ProtectedRoute />}>
+        {/* <Route element={<ProtectedRoute />}>
           <Route path="delivery" element={<DeliveryService idx={1} />} />
           <Route
             path="delivery/trip-planning/:orderid"
@@ -173,7 +145,7 @@ export const Routers = () => {
               element={<ChangeLanguage />}
             />
           </Route>
-        </Route>
+        </Route> */}
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
       {/* <Footer /> */}

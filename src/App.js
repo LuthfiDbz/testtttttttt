@@ -21,7 +21,7 @@ function App() {
       {/* <HelmetProvider> */}
         <div className="App">
           <Routers />
-          <Notification />
+          {/* <Notification /> */}
         </div>
       {/* </HelmetProvider> */}
     </AuthContextProvider>

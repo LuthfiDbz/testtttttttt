@@ -1,13 +1,15 @@
 import React from "react";
 import { Col, Row } from "reactstrap";
-import lessGlacee from "../../../assets/icon/client/les-glacee.jpg";
-import bakersun from "../../../assets/icon/client/bakersun.jpeg";
-import chiayo from "../../../assets/icon/client/chiayo.jpg";
-import goodHeart from "../../../assets/icon/client/goodheart.jpeg";
-import joyDay from "../../../assets/icon/client/joyday.png";
-import sewuPrimatama from "../../../assets/icon/client/sewu-primatama.png";
-import ziato from "../../../assets/icon/client/ziato.jpeg";
-import cmpi from "../../../assets/icon/client/cmpi.png";
+import singapura from "../../../assets/icon/client/PT-Singapura-Fresh-Green.jpg";
+import tigaraksa from "../../../assets/icon/client/PT-Tigaraksa-Satria.jpg";
+import mcdeli from "../../../assets/icon/client/Mc-Deli.png";
+import amazingFarm from "../../../assets/icon/client/Amazing-Farm.png";
+import biomed from "../../../assets/icon/client/Biomed-Sinergi.png";
+import campina from "../../../assets/icon/client/Campina.png";
+import chiayo from "../../../assets/icon/client/Chia-Yo.jpg";
+import efishery from "../../../assets/icon/client/Efishery.jpg";
+import haagen from "../../../assets/icon/client/Haagen-daaz.png";
+import joyday from "../../../assets/icon/client/Joyday.png";
 
 import "../../../styles/client/client.scss";
 import { useTranslation } from "react-i18next";
@@ -17,28 +19,44 @@ export const Client = () => {
 
   const clientData = [
     {
-      imgUrl: lessGlacee,
+      imgUrl: singapura,
+      alt: 'PT Singapura Fresh Green'
     },
     {
-      imgUrl: bakersun,
+      imgUrl: tigaraksa,
+      alt: 'PT Tigarakasa Satria'
+    },
+    {
+      imgUrl: mcdeli,
+      alt: 'Mc Deli'
+    },
+    {
+      imgUrl: amazingFarm,
+      alt: 'Amazing Farm'
+    },
+    {
+      imgUrl: biomed,
+      alt: 'Biomed Sinergi'
+    },
+    {
+      imgUrl: campina,
+      alt: 'Campina'
     },
     {
       imgUrl: chiayo,
+      alt: 'Chia-Yo'
     },
     {
-      imgUrl: goodHeart,
+      imgUrl: efishery,
+      alt: 'eFishery'
     },
     {
-      imgUrl: joyDay,
+      imgUrl: haagen,
+      alt: 'Haagen Dazs'
     },
     {
-      imgUrl: sewuPrimatama,
-    },
-    {
-      imgUrl: ziato,
-    },
-    {
-      imgUrl: cmpi,
+      imgUrl: joyday,
+      alt: 'Joyday'
     },
   ];
   return (
@@ -52,7 +70,7 @@ export const Client = () => {
         {clientData.map((item, index) => (
           <Col key={index} className="mt-3 col-6 col-md-3">
             <div className="client-item" data-aos="fade-up">
-              <img src={item.imgUrl} alt="feature-img" />
+              <img src={item.imgUrl} alt={item.alt} />
             </div>
           </Col>
         ))}

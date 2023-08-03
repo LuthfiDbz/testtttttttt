@@ -1,5 +1,5 @@
 {
-  "deliveryAreas": "Delivery Areas",
+  "deliveryAreas": "Area Pengiriman",
   "dimensions": "Dimensi",
   "vehicleInformation": "Informasi Kendaraan",
   "maximumWeight": "Berat Maksimal",
@@ -112,7 +112,7 @@
   "tripInfo": "Informasi Perjalanan",
   "datePickup": "Tanggal Pengambilan",
   "timePickup": "Jam Pengambilan",
-  "temperature": "Temperatur",
+  "temperature": "Suhu",
   "serviceInfo": "Informasi Layanan",
   "serviceType": "Tipe Layanan",
   "vehicleType": "Tipe Kendaraan",

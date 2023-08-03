@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 import toast, { Toaster } from 'react-hot-toast';
 import { useTranslation } from 'react-i18next';
 import BlueNotif from "../../assets/icon/ic-box-blue.png"
@@ -6,11 +6,11 @@ import { fetchToken, onMessageListener } from './firebase';
 
 const Notification = () => {
   const { t } = useTranslation()
-  const [notification, setNotification] = useState({title: '', body: ''});
+  const [notification, setNotification] = useState({ title: '', body: '' });
   const [isTokenFound, setTokenFound] = useState(false);
-  const notify = () =>  toast(<ToastDisplay/>, {
+  const notify = () => toast(<ToastDisplay />, {
     position: 'top-right'
-  }); 
+  });
   function ToastDisplay() {
     return (
       <div className='push-notif'>
@@ -25,8 +25,8 @@ const Notification = () => {
   };
 
   useEffect(() => {
-    if (notification?.title ){
-     notify()
+    if (notification?.title) {
+      notify()
     }
   }, [notification])
 
@@ -35,7 +35,7 @@ const Notification = () => {
 
   onMessageListener()
     .then((payload) => {
-      setNotification({title: payload?.notification?.title, body: payload?.notification?.body});     
+      setNotification({ title: payload?.notification?.title, body: payload?.notification?.body });
     })
     .catch((err) => console.log('failed: ', err));
 
@@ -45,7 +45,7 @@ const Notification = () => {
         {isTokenFound && <h1> Notification permission enabled 👍🏻 </h1>}
         {!isTokenFound && <h1> Need notification permission ❗️ </h1>}
       </div> */}
-     <Toaster/>
+      <Toaster />
     </>
   )
 }

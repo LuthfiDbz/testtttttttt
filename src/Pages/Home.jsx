@@ -20,7 +20,7 @@ export const Home = () => {
     <>
       {/* <Header notifToken={isTokenFound}/> */}
       <Helmet>
-        <title>Superkul</title>
+        <title>Superkul Landing Page</title>
         <meta
           name="description"
           content="Percayakan pengiriman barangmu yang membutuhkan suhu dingin kepada Superkul." />

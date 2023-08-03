@@ -6,10 +6,10 @@ import AppStore from "../../../assets/img/app-store.png";
 import PlayStore from "../../../assets/img/play-store.png";
 import BannerImg from "../../../assets/img/banner-img.png";
 
-export const RedirectApp = ({isOpen, toggle, data}) => {
+export const RedirectApp = ({ isOpen, toggle, data }) => {
   const { t } = useTranslation()
   const [loadingScreen, setLoadingScreen] = useState(false)
-  
+
 
   return (
     <Modal isOpen={isOpen} fullscreen={true} className="redirect-app">
@@ -28,7 +28,8 @@ export const RedirectApp = ({isOpen, toggle, data}) => {
             src={AppStore}
             alt="banner-img"
             className="appstore-img"
-            />
+            onClick={() => window.open("https://apps.apple.com/id/app/superkul/id6450106454")}
+          />
           <img
             href="#"
             src={PlayStore}
@@ -37,7 +38,7 @@ export const RedirectApp = ({isOpen, toggle, data}) => {
             onClick={() => window.open("https://play.google.com/store/apps/details?id=com.superkul.customer.app&pli=1")}
           />
         </div>
-        
+
       </ModalBody>
       <ModalFooter className="redirect-app-footer">
       </ModalFooter>

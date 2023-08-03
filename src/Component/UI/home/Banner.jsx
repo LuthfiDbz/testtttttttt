@@ -29,7 +29,8 @@ export const Banner = () => {
                     src={AppStore}
                     alt="banner-img"
                     className="appstore-img"
-                    />
+                    onClick={() => window.open("https://apps.apple.com/id/app/superkul/id6450106454")}
+                  />
                   <img
                     href="#"
                     src={PlayStore}
