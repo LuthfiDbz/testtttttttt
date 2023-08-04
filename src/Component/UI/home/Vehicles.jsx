@@ -388,23 +388,23 @@ export const Vehicles = () => {
                 </span>
               </div>
             }
-            <div className="smooth-scrollbar vehicle-content">
+            <div className="smooth-scrollbar vehicle-content" >
               {tabSelected === 1 && (
-                <div>
-                  <Row >
-                    <Col sm={12} md={6}>
-                      <div className="ps-3 ps-md-5 pt-4 pb-3 ">
+                <div className="h-100">
+                  <Row className="h-100">
+                    <Col sm={12} md={7}>
+                      <div className="ps-3 ps-md-5 pt-4 pb-3">
                         <h4> <strong>{listSelected.name.toLocaleUpperCase()}</strong> </h4>
                       </div>
-                      <div className="d-none d-md-block" style={{ margin: "8vh 0vh" }}>
+                      <div className="d-none d-md-block pt-5" >
                         <img src={listSelected.imgUrl} alt="feature-img" />
                       </div>
-                      <div className="d-block d-md-none">
+                      <div className="d-block d-md-none text-center">
                         <img src={listSelected.imgUrl} alt="feature-img" width={200} />
                       </div>
                     </Col>
-                    <Col sm={12} md={6}>
-                      <div style={{ margin: "0vh 0vh" }} className="ps-3 ps-md-5 pt-5 pb-3">
+                    <Col sm={12} md={5} className="pt-md-5">
+                      <div style={{ margin: "0vh 0vh" }} className="ps-3 ps-md-5 pb-3 pt-1 pt-md-5 mt-4">
                         <h5><strong>{t("vehicleInformation")}</strong></h5>
                         <div className="pt-3">
                           <h6>
@@ -424,12 +424,14 @@ export const Vehicles = () => {
                           </h6>
                           <p>{listSelected.vehicleInfo.temperature}</p>
                         </div>
-                        <div className="pt-3">
-                          <h6>
-                            <strong>{t("deliveryAreas")}</strong>
-                          </h6>
-                          <p>{listSelected.vehicleInfo.area}</p>
-                        </div>
+                        {listSelected.name !== "Bike" &&
+                          <div className="pt-3">
+                            <h6>
+                              <strong>{t("deliveryAreas")}</strong>
+                            </h6>
+                            <p>{listSelected.vehicleInfo.area}</p>
+                          </div>
+                        }
                       </div>
                     </Col>
                   </Row>
