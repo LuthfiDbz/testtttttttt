@@ -23,42 +23,42 @@ export const EmailVerification = () => {
       const response = await axios.post(`${url}&signature=${signature}`)
       setIsVerified(true)
       setTimeout(() => {
-        navigate('/login')
+        navigate(`${process.env.REACT_APP_SUBWEB_URL}/login`)
       }, 3000);
-    } catch(error) {
+    } catch (error) {
       console.log(error.message)
-      
+
     }
   }
 
   return (
-    <div 
-      className="email-verification" 
+    <div
+      className="email-verification"
       style={{
-        height: '100vh', 
-        width: '100vw', 
-        display: 'flex', 
-        alignItems: 'center', 
-        justifyContent: 'center', 
+        height: '100vh',
+        width: '100vw',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
         gap: '2rem'
       }}
     >
-      {isVerified ? 
-          <>
-            <BsCheckCircle style={{color: 'green', width: '5rem', height: '5rem'}}/>
-            <h1 style={{fontSize: '3rem', margin: '0'}}>Verified</h1>
-          </>
+      {isVerified ?
+        <>
+          <BsCheckCircle style={{ color: 'green', width: '5rem', height: '5rem' }} />
+          <h1 style={{ fontSize: '3rem', margin: '0' }}>Verified</h1>
+        </>
         :
-          <>
+        <>
           {/* Icon */}
-            <Spinner color="dark" style={{
-              height: '5rem',
-              width: '5rem'
-            }}></Spinner>
-            <h1>Verifying...</h1>
-          </>
+          <Spinner color="dark" style={{
+            height: '5rem',
+            width: '5rem'
+          }}></Spinner>
+          <h1>Verifying...</h1>
+        </>
       }
-      {errorPage && 
+      {errorPage &&
         <div>
           <h1>{errorMessage}</h1>
         </div>

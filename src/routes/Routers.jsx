@@ -77,8 +77,8 @@ export const Routers = () => {
         <Route path="promo/:id" element={<PromoDetail />} />
         <Route path="4nv1t3st" element={<LoggingEnv />} />
         {/* <Route path="contact-us" element={<ContactUs />} /> */}
-        {/* <Route path="email/verify" element={<EmailVerification />} />
-        <Route path="update-password" element={<UpdatePassword />} /> */}
+        <Route path="email/verify" element={<EmailVerification />} />
+        <Route path="update-password" element={<UpdatePassword />} />
         <Route path="coming-soon" element={<ComingSoon />} />
         {/* <Route element={<ProtectedRoute />}>
           <Route path="delivery" element={<DeliveryService idx={1} />} />

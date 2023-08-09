@@ -119,7 +119,7 @@ export const Hero = () => {
   const handleDeliverNow = () => {
     if (isMobile || window.innerWidth <= 768) return toggleRedirectApp()
 
-    window.open(`${process.env.REACT_APP_WEB_URL}/login`, '_blank');
+    window.open(`${process.env.REACT_APP_SUBWEB_URL}/login`, '_blank');
   }
 
   return (

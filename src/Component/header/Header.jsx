@@ -124,7 +124,7 @@ export const Header = ({ notifToken }) => {
             <Button
               className="btn-login"
               // href={`/login`}
-              href={`${process.env.REACT_APP_WEB_URL}/login`}
+              href={`${process.env.REACT_APP_SUBWEB_URL}/login`}
               target="_blank"
               style={{
                 marginRight: '2rem'
