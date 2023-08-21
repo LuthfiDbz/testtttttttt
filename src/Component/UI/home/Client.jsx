@@ -9,7 +9,7 @@ import campina from "../../../assets/icon/client/Campina.png";
 import chiayo from "../../../assets/icon/client/Chia-Yo.jpg";
 import efishery from "../../../assets/icon/client/Efishery.jpg";
 import haagen from "../../../assets/icon/client/Haagen-daaz.png";
-import joyday from "../../../assets/icon/client/joyday.png";
+import joyday from "../../../assets/icon/client/IC-Joyday.png";
 
 import "../../../styles/client/client.scss";
 import { useTranslation } from "react-i18next";
