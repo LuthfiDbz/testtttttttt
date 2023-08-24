@@ -23,7 +23,7 @@ export const EmailVerification = () => {
       const response = await axios.post(`${url}&signature=${signature}`)
       setIsVerified(true)
       setTimeout(() => {
-        navigate(`${process.env.REACT_APP_SUBWEB_URL}/login`)
+        window.location.href = `${process.env.REACT_APP_SUBWEB_URL}/login`
       }, 3000);
     } catch (error) {
       console.log(error.message)
