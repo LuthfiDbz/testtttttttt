@@ -14,6 +14,7 @@ import { Partner } from "../Component/UI/home/Partner";
 import { Faq } from "../Component/UI/home/faq/Faq";
 import { Helmet } from "react-helmet";
 import { BsWhatsapp } from "react-icons/bs";
+import { ClientSlider } from "../Component/UI/home/ClientSlider";
 
 export const Home = () => {
   return (
@@ -38,7 +39,8 @@ export const Home = () => {
         <Vehicles />
         <Banner />
         <Guide />
-        <Client />
+        {/* <Client /> */}
+        <ClientSlider />
         <Partner />
         <Faq />
         <a

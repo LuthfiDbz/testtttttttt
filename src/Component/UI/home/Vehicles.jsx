@@ -370,14 +370,14 @@ export const Vehicles = () => {
                 >
                   Sameday Delivery
                 </span>
-                <span
+                {/* <span
                   className={tabSelected === 3 && "span-selected"}
                   onClick={() => {
                     listSelected.name === "Bike" && setTabSelected(3);
                   }}
                 >
                   Instant Delivery
-                </span>
+                </span> */}
                 <span
                   className={tabSelected === 4 && "span-selected"}
                   onClick={() => {
@@ -598,9 +598,6 @@ export const Vehicles = () => {
                     <div className="row justify-content-between">
                       <div className="col-4">
                         <p className="subtitle">Tarif (Flat per hari)</p>
-                        <p className="desc">
-                          {listSelected?.dedicatedService?.tarif?.[1] ?? "-"}
-                        </p>
                         <p className="desc">
                           {listSelected?.dedicatedService?.tarif?.[2] ?? "-"}
                         </p>

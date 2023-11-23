@@ -10,23 +10,28 @@ export const Services = () => {
   const serviceData = [
     {
       imgUrl: Service,
-      title: t("serviceSection.instantDelivery"),
+      title: t("serviceSection.sameday"),
       desc: t("serviceSection.service1"),
     },
     {
       imgUrl: Service,
-      title: t("serviceSection.frozenDelivery"),
+      title: t("serviceSection.dedicated"),
       desc: t("serviceSection.service2"),
     },
     {
       imgUrl: Service,
-      title: t("serviceSection.dedicatedDelivery"),
+      title: t("serviceSection.superkulTruck"),
       desc: t("serviceSection.service3"),
     },
     {
       imgUrl: Service,
-      title: t("serviceSection.superkulTruck"),
+      title: t("serviceSection.crossdock"),
       desc: t("serviceSection.service4"),
+    },
+    {
+      imgUrl: Service,
+      title: t("serviceSection.superExpress"),
+      desc: t("serviceSection.service5"),
     },
   ];
   return (

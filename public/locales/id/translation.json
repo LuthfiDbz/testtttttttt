@@ -307,14 +307,16 @@
   "serviceSection": {
     "whatIsService": "Apa Saja Layanan Dari Superkul?",
     "findOut": "Temukan layanan Superkul yang sesuai dengan kebutuhanmu",
-    "instantDelivery": "Instant Delivery Service",
-    "service1": "Layanan pengiriman dengan waktu pengiriman maksimal 2 jam dari titik penjemputan hingga titik pengantaran. ",
-    "frozenDelivery": "Sameday Delivery Service",
-    "service2": "Layanan pengiriman dengan waktu pengiriman maksimal 8 jam dari titik penjemputan hingga titik pengantaran, kamu juga dapat melakukan order dengan lebih dari 1 titik pengiriman.    ",
-    "dedicatedDelivery": "Dedicated Service",
-    "service3": "Layanan penyewaan motor berpendingin yang dimiliki oleh Superkul dengan durasi minimum 3 bulan.",
+    "sameday": "Sameday Delivery Service",
+    "service1": "Layanan pengiriman menggunakan motor berpendingin dengan waktu pengiriman maksimal 8 jam dari titik penjemputan hingga titik pengantaran, kamu juga dapat melakukan order dengan lebih dari 1 titik pengiriman.",
+    "dedicated": "Dedicated Service",
+    "service2": "Layanan penyewaan motor berpendingin yang dimiliki oleh Superkul dengan durasi minimum 3 bulan.",
     "superkulTruck": "Superkul Truck",
-    "service4": "Layanan pengiriman menggunakan truck berpendingin dengan rute Jabodetabek, kamu dapat melakukan pengeriman order dengan lebih dari 1 titik pengiriman, pemesanan Superkul Truck dapat dilakukan maksimal H-1 hari dari jadwal penjemputan barang."
+    "service3": "Layanan pengiriman menggunakan truck berpendingin dengan rute Jabodetabek, kamu dapat melakukan pengeriman order dengan lebih dari 1 titik pengiriman, pemesanan Superkul Truck dapat dilakukan maksimal H-1 hari dari jadwal penjemputan barang.",
+    "crossdock": "Cross Docking Service",
+    "service4": "Layanan penyimpanan sementara untuk customer Superkul yang ingin mengirimkan barang atau produknya menggunakan layanan delivery Superkul dari hub Superkul.",
+    "superExpress": "Superexpress Delivery Service",
+    "service5": "Layanan pengiriman barang tanpa suhu dingin (dry) dengan waktu pengiriman maksimal 8 jam dari titik penjemputan hingga titik pengantaran, kamu juga dapat melakukan order dengan lebih dari 1 titik pengiriman."
   },
   "vehicleSection": {
     "howMuch": "Berapa Biaya untuk Masing-masing Layanan Superkul?",
@@ -347,7 +349,7 @@
     "q1": "Apa itu Superkul?",
     "a1": "Superkul merupakan penyedia layanan pengiriman barang/produk yang membutuhkan suhu dingin. Superkul menyediakan layanan untuk pengiriman dengan menggunakan motor berpendingin Superkul dan truck berpendingin Superkul Truck. Pengiriman Superkul dapat diatur suhunya dari 10°C hingga -22°C sesuai dengan kebutuhan suhu barang.",
     "q2": "Jam berapa Superkul beroperasi?",
-    "a2": "Superkul beroperasi dari jam 8 pagi sampai 6 malam, hari Senin sampai Minggu.",
+    "a2": "Superkul beroperasi dari jam 6 pagi sampai 4 sore, hari Senin sampai Sabtu.",
     "q3": "Superkul ada di area mana saja?",
     "a3": "Layanan Superkul saat ini tersedia untuk daerah Jakarta, Bogor, Depok, Tangerang, Bekasi, dan Bandung. Kami akan terus mengembangkan layanan kami untuk dapat menjangkau wilayah yang lebih luas.",
     "q4": "Apa saja metode pembayaran Superkul?",
