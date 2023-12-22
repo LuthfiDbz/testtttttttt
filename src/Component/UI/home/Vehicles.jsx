@@ -59,7 +59,7 @@ export const Vehicles = () => {
     dedicatedService: {
       tarif: {
         1: "Superkul Bike only : Rp. 150.000",
-        2: "Superkul Bike & Driver : Rp. 300.000",
+        2: "Superkul Bike & Driver : Rp. 12.000.000",
       },
       area: "Jakarta, Bogor, Depok, Tangerang, Bekasi, dan Bandung",
       servicePlusPlus: [
@@ -597,7 +597,7 @@ export const Vehicles = () => {
                   <div className="info-vehicles">
                     <div className="row justify-content-between">
                       <div className="col-4">
-                        <p className="subtitle">Tarif (Flat per hari)</p>
+                        <p className="subtitle">Tarif (Flat per bulan)</p>
                         <p className="desc">
                           {listSelected?.dedicatedService?.tarif?.[2] ?? "-"}
                         </p>
