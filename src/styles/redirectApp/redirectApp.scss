@@ -1,12 +1,14 @@
 @import '../variable/color';
 
 .redirect-app {
-  font-family: 'Urbanist', sans-serif;
+  font-family: "Roboto", sans-serif;
   background-color: red;
   margin-left: 0;
+
   &.loading {
     cursor: wait;
   }
+
   .modal-content {
     width: 100vw;
     margin-left: 0;
@@ -14,29 +16,35 @@
     padding-inline: 0;
     border-radius: 1rem;
   }
+
   .redirect-app-header {
     padding-inline: 2rem;
     border: none;
+
     .modal-title {
       width: 100%;
       padding-bottom: 1rem;
     }
+
     .header-content {
       display: flex;
       width: 1005;
       justify-content: space-between;
       align-items: center;
+
       div {
         h3 {
           font-size: 1.125rem;
           font-weight: 700;
         }
+
         h5 {
           font-size: 1rem;
         }
       }
     }
   }
+
   .redirect-app-body {
     position: relative;
     height: 60vh;
@@ -45,23 +53,28 @@
     overflow-y: scroll;
     scrollbar-width: none;
     -ms-overflow-style: none;
+
     &::-webkit-scrollbar {
       display: none;
     }
+
     .redirect-app-banner-img {
       position: relative;
       right: 0;
       width: 95%;
     }
+
     p {
       font-weight: 500;
     }
   }
+
   .redirect-app-footer {
     border: none;
     justify-content: flex-end;
     flex-wrap: nowrap;
     padding: 1rem;
+
     .close {
       width: 40%;
       font-size: 0.75rem;
