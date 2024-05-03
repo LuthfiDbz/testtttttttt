@@ -1,7 +1,10 @@
 import React from "react";
 import { Col } from "reactstrap";
 import "../../../styles/Service/service.scss";
-import Service from "../../../assets/img/feature2.png";
+import Service1 from "../../../assets/img/service1.png";
+import Service2 from "../../../assets/img/service2.png";
+import Service3 from "../../../assets/img/service3.png";
+import Service4 from "../../../assets/img/service4.png";
 import { useTranslation } from "react-i18next";
 
 export const Services = () => {
@@ -9,27 +12,27 @@ export const Services = () => {
 
   const serviceData = [
     {
-      imgUrl: Service,
+      imgUrl: Service1,
       title: t("serviceSection.sameday"),
       desc: t("serviceSection.service1"),
     },
     {
-      imgUrl: Service,
+      imgUrl: Service2,
       title: t("serviceSection.dedicated"),
       desc: t("serviceSection.service2"),
     },
     {
-      imgUrl: Service,
+      imgUrl: Service3,
       title: t("serviceSection.superkulTruck"),
       desc: t("serviceSection.service3"),
     },
+    // {
+    //   imgUrl: Service4,
+    //   title: t("serviceSection.crossdock"),
+    //   desc: t("serviceSection.service4"),
+    // },
     {
-      imgUrl: Service,
-      title: t("serviceSection.crossdock"),
-      desc: t("serviceSection.service4"),
-    },
-    {
-      imgUrl: Service,
+      imgUrl: Service4,
       title: t("serviceSection.superExpress"),
       desc: t("serviceSection.service5"),
     },

@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import bike from "../../../assets/img/vehicle.png";
-// import truckL300 from "../../../assets/img/truck-l300-soon.png";
+import truckL300 from "../../../assets/img/truck-l300.png";
 // import truckCde from "../../../assets/img/truck-cde.png";
 // import truckCdd from "../../../assets/img/truck-cdd-soon.png";
 // import blindVan from "../../../assets/img/blind-van-soon.png";
@@ -24,7 +24,7 @@ export const Vehicles = () => {
     vehicleInfo: {
       weightMax: "30Kg",
       dimension: "80L (58cm x 32cm x 42cm)",
-      temperature: "-22&deg;C sampai 10&deg;C",
+      temperature: <>-22&deg;C sampai 10&deg;C</>,
     },
     sameDayDelivery: {
       priceMin: "Rp 12.000",
@@ -34,7 +34,7 @@ export const Vehicles = () => {
         1: "Rp. 3.500,- per kilometer",
         2: "Rp. 5.000,- (Handling Fee)",
       },
-      area: "Jakarta, Bogor, Depok, Tangerang and Bekasi",
+      area: "Jakarta, Bogor, Depok, Tangerang, Bekasi, dan Bandung",
       servicePlusPlus: [
         "Kamu dapat mengatur jadwal pengiriman kamu.",
         "Kamu dapat melakukan pengiriman multiple pickup & multiple drop dalam satu order.",
@@ -123,6 +123,17 @@ export const Vehicles = () => {
       },
     },
     {
+      id: 3,
+      name: "Truk L300",
+      imgUrl: truckL300,
+      vehicleInfo: {
+        weightMax: "1 Ton",
+        dimension: "(249 cm x 159 cm x 120 cm)",
+        temperature: "-22°C sampai 10°C",
+        area: "Jawa",
+      },
+    },
+    {
       id: 6,
       name: "Truk CDE Standard",
       imgUrl: imgCde,
@@ -144,28 +155,29 @@ export const Vehicles = () => {
         ],
       },
     },
-    {
-      id: 7,
-      name: "Truk CDE Long",
-      imgUrl: imgCde,
-      vehicleInfo: {
-        weightMax: "3 Tonnes",
-        dimension: "(380 cm x 160 cm x 170 cm)",
-        temperature: "-22°C  sampai 10°C",
-        area: "Jawa, Bali",
-        tarif: "Mulai dari Rp 975.000",
-        tarifPlus: [
-          "Mulai dari Rp,70.000 untuk Intracity",
-          "Mulai dari  Rp,120.000 untuk Intercity",
-        ],
-        servicePlusPlus: [
-          "Kamu dapat melakukan multiple drop dalam satu order trip.",
-          "Sangat cocok untuk penyimpanan sekaligus pengiriman produk yang memerlukan suhu mulai dari  -22°C  sampai 10°C.",
-          "Memiliki kapasitas yang besar, sehingga memungkinkan untuk melakukan pengiriman dalam jumlah besar.",
-          "Suhu dapat diatur sesuai dengan kebutuhan.",
-        ],
-      },
-    },
+
+    // {
+    //   id: 7,
+    //   name: "Truk CDE Long",
+    //   imgUrl: imgCde,
+    //   vehicleInfo: {
+    //     weightMax: "3 Tonnes",
+    //     dimension: "(380 cm x 160 cm x 170 cm)",
+    //     temperature: "-22°C  sampai 10°C",
+    //     area: "Jawa, Bali",
+    //     tarif: "Mulai dari Rp 975.000",
+    //     tarifPlus: [
+    //       "Mulai dari Rp,70.000 untuk Intracity",
+    //       "Mulai dari  Rp,120.000 untuk Intercity",
+    //     ],
+    //     servicePlusPlus: [
+    //       "Kamu dapat melakukan multiple drop dalam satu order trip.",
+    //       "Sangat cocok untuk penyimpanan sekaligus pengiriman produk yang memerlukan suhu mulai dari  -22°C  sampai 10°C.",
+    //       "Memiliki kapasitas yang besar, sehingga memungkinkan untuk melakukan pengiriman dalam jumlah besar.",
+    //       "Suhu dapat diatur sesuai dengan kebutuhan.",
+    //     ],
+    //   },
+    // },
     {
       id: 8,
       name: "Truk CDD Standard",
@@ -188,28 +200,28 @@ export const Vehicles = () => {
         ],
       },
     },
-    {
-      id: 9,
-      name: "Truk CDD Long",
-      imgUrl: imgCddLong,
-      vehicleInfo: {
-        weightMax: "5 Tonnes",
-        dimension: "(500 cm x 175 cm x 175 cm)",
-        temperature: "-22°C  sampai 10°C",
-        area: "Jawa, Sumatra, Bali",
-        tarif: "Mulai dari Rp 975.000",
-        tarifPlus: [
-          "Mulai dari Rp,70.000 untuk Intracity",
-          "Mulai dari  Rp,120.000 untuk Intercity",
-        ],
-        servicePlusPlus: [
-          "Kamu dapat melakukan multiple drop dalam satu order trip.",
-          "Sangat cocok untuk penyimpanan sekaligus pengiriman produk yang memerlukan suhu mulai dari  -22°C  sampai 10°C.",
-          "Memiliki kapasitas yang besar, sehingga memungkinkan untuk melakukan pengiriman dalam jumlah besar.",
-          "Suhu dapat diatur sesuai dengan kebutuhan.",
-        ],
-      },
-    },
+    // {
+    //   id: 9,
+    //   name: "Truk CDD Long",
+    //   imgUrl: imgCddLong,
+    //   vehicleInfo: {
+    //     weightMax: "5 Tonnes",
+    //     dimension: "(500 cm x 175 cm x 175 cm)",
+    //     temperature: "-22°C  sampai 10°C",
+    //     area: "Jawa, Sumatra, Bali",
+    //     tarif: "Mulai dari Rp 975.000",
+    //     tarifPlus: [
+    //       "Mulai dari Rp,70.000 untuk Intracity",
+    //       "Mulai dari  Rp,120.000 untuk Intercity",
+    //     ],
+    //     servicePlusPlus: [
+    //       "Kamu dapat melakukan multiple drop dalam satu order trip.",
+    //       "Sangat cocok untuk penyimpanan sekaligus pengiriman produk yang memerlukan suhu mulai dari  -22°C  sampai 10°C.",
+    //       "Memiliki kapasitas yang besar, sehingga memungkinkan untuk melakukan pengiriman dalam jumlah besar.",
+    //       "Suhu dapat diatur sesuai dengan kebutuhan.",
+    //     ],
+    //   },
+    // },
     // {
     //   id: 10,
     //   name: "Truk Jumbo",
@@ -262,17 +274,7 @@ export const Vehicles = () => {
     //     area: "Jakarta, Bogor, Depok, Tangerang, dan Bekasi.",
     //   },
     // },
-    // {
-    //   id: 3,
-    //   name: "Truk L300",
-    //   imgUrl: truckL300,
-    //   vehicleInfo: {
-    //     weightMax: "1 Ton",
-    //     dimension: "(200 cm x 160 cm x 154 cm)",
-    //     temperature: "-22°C sampai 10°C",
-    //     area: "Jakarta, Bogor, Depok, Tangerang, dan Bekasi.",
-    //   },
-    // },
+
     // {
     //   id: 4,
     //   name: "Truk CDE",

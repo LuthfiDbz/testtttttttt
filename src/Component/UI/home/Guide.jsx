@@ -29,12 +29,13 @@ export const Guide = () => {
     <div className="guide-container">
       <Row>
         <div className="column-img" data-aos="fade-right">
-          <img src={GuideImg} alt="guide-img" className="guide-img" />
+          <img src={GuideImg} alt="guide-img" className="guide-img mt-5" />
         </div>
+
 
         <div className="guide-text">
           <div className="guide-content">
-            <h2 className="mb-2 guide-title">{t("guideSection.howTo")}</h2>
+            <h2 className="mb-2 mt-5 guide-title">{t("guideSection.howTo")}</h2>
 
             <p className="guide-paragraf">{t("guideSection.makeItEasier")}</p>
 

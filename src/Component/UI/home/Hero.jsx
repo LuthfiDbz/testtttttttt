@@ -138,6 +138,9 @@ export const Hero = () => {
               <div className="d-flex align-items-center gap-2 mt-4 justify-content-center justify-content-md-start">
                 <Button
                   className="btn-start-delevery d-flex"
+                  style={{
+                    width: "fit-content"
+                  }}
                   onClick={handleDeliverNow}
                 // href={`${process.env.REACT_APP_WEB_URL}/login`}
                 // target="_blank"
