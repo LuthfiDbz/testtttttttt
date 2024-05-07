@@ -3,12 +3,13 @@ import React from "react";
 import { Col, Row } from "reactstrap";
 
 import Features1 from "../../../assets/img/feature1.png";
-import Features2 from "../../../assets/img/feature2.png";
-import Features3 from "../../../assets/img/feature3.png";
-import Features4 from "../../../assets/img/feature4.png";
-import Features6 from "../../../assets/img/feature6.png";
+import Features2 from "../../../assets/img/feature5.png";
+import Features3 from "../../../assets/img/feature6.png";
+import Features4 from "../../../assets/img/feature3.png";
+import Features5 from "../../../assets/img/feature8.png";
+import Features6 from "../../../assets/img/feature4.png";
 import Features7 from "../../../assets/img/feature7.png";
-import Features8 from "../../../assets/img/feature8.png";
+import Features8 from "../../../assets/img/feature2.png";
 
 import "../../../styles/features/features.css";
 import { useTranslation } from "react-i18next";
@@ -33,9 +34,8 @@ export const Features = () => {
       imgUrl: Features4,
       desc: t("featureSection.feature4"),
     },
-
     {
-      imgUrl: Features4,
+      imgUrl: Features5,
       desc: t("featureSection.feature5"),
     },
     {
@@ -46,7 +46,6 @@ export const Features = () => {
       imgUrl: Features7,
       desc: t("featureSection.feature7"),
     },
-
     {
       imgUrl: Features8,
       desc: t("featureSection.feature8"),

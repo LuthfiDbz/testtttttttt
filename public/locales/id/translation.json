@@ -296,13 +296,13 @@
     "whySuperkul": "Mengapa Kamu Harus Menggunakan Superkul?",
     "sendAnything": "Kirim barang dingin apa pun seperti makanan beku, es krim, susu, obat-obatan dengan logistik terbaik",
     "feature1": "Suhu dapat diatur sesuai jenis barang",
-    "feature2": "Multi Pickup & Multi drop dalam sekali pengiriman",
-    "feature3": "Fitur optimasi rute yang dapat menghemat biaya",
-    "feature4": "Proteksi kehilangan dan kerusakan barang hingga 1 Juta Rupiah",
+    "feature2": "Kurangi ice gel pack, dry ice, atau tambahan kemasan lainnya",
+    "feature3": "Multi drop dalam sekali pengiriman",
+    "feature4": "Fitur optimasi rute yang dapat menghemat biaya",
     "feature5": "Kualitas barang prima , kurangi kerusakan & keluhan",
-    "feature6": "Jadwalkan pengiriman Anda sesuai kebutuhan",
-    "feature7": "Pengiriman hingga 30 kg / 80 L per perjalanan",
-    "feature8": "Hemat! Kurangi biaya pengemasan"
+    "feature6": "Proteksi kehilangan dan kerusakan barang hingga 1 Juta Rupiah",
+    "feature7": "Jadwalkan pengiriman Anda sesuai kebutuhan",
+    "feature8": "Layanan kami tersedia di Jabodetabek, Bandung, dan Yogyakarta"
   },
   "serviceSection": {
     "whatIsService": "Apa Saja Layanan Dari Superkul?",
@@ -310,7 +310,7 @@
     "sameday": "Sameday Delivery Service",
     "service1": "Layanan pengiriman menggunakan motor berpendingin dengan waktu pengiriman maksimal 8 jam dari titik penjemputan hingga titik pengantaran, kamu juga dapat melakukan order dengan lebih dari 1 titik pengiriman.",
     "dedicated": "Dedicated Service",
-    "service2": "Layanan penyewaan motor berpendingin beserta driver superku tanpa biaya tambahan lainnya. Penyewaan bisa harian maupun bulanan.",
+    "service2": "Layanan penyewaan motor berpendingin beserta driver superkul tanpa biaya tambahan lainnya. Penyewaan bisa harian maupun bulanan.",
     "superkulTruck": "Superkul Truck",
     "service3": "Layanan pengiriman truck berpendingin dengan rute pulau Jawa, dan Bali. Superkul Truck menyediakan pilihan LTL (Less Than Truckload) dengan biaya per kilogram serta FTL (Full Truck Load) dengan biaya per armada.",
     "crossdock": "Cross Docking Service",

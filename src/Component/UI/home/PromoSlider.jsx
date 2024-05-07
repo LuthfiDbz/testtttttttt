@@ -79,7 +79,7 @@ export const Promo = () => {
           </div>
         ))}
       </Slider>
-      {promoData.length > 3 || window.innerWidth < 700 ? (
+      {promoData.length > 3 && window.innerWidth > 700 ? (
         <>
           <img
             src={ArrowLeftIcon}

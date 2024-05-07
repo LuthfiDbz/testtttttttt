@@ -12,18 +12,11 @@
 }
 
 .service-img {
-  // display: table;
-  // border-collapse: separate;
-  // border-spacing: 1rem;
-  // align-items: center;
   justify-content: center;
-  width: 100%;
 
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
-  // grid-template-columns: repeat(5, 1fr);
-  // grid-row-gap: 5px;
 
   .service-item {
     // margin: 5rem;
@@ -75,9 +68,10 @@
 
   .service-img {
     display: grid;
+    gap: 1rem;
 
     .service-item {
-      max-width: 90vw;
+      width: 100%;
       padding: 1rem;
       margin: auto;
       margin-top: 2rem;

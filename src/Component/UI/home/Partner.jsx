@@ -23,7 +23,7 @@ export const Partner = () => {
         <Col className="mt-3 d-block d-md-flex justify-content-center">
           <div className="card-container" data-aos="zoom-in">
             <h4 className="title-card">Driver</h4>
-            <p className="desc-card">{t("partnerSection.findOutDriver")}</p>
+            <p className="desc-card text-center">{t("partnerSection.findOutDriver")}</p>
             <img className="card-img" src={Driver} alt="Driver" />
             <a href="/driver">
               <button className="card-btn" >{t("readMore")}</button>
@@ -31,7 +31,7 @@ export const Partner = () => {
           </div>
           <div className="card-container" data-aos="zoom-in">
             <h4 className="title-card">{t("Vendor")}</h4>
-            <p className="desc-card">{t("partnerSection.findOutVendor")}</p>
+            <p className="desc-card text-center">{t("partnerSection.findOutVendor")}</p>
             <img className="card-img-vendor" src={Vendor} alt="Driver" />
             <a href="/mitra">
               <button className="card-btn" >{t("readMore")}</button>
