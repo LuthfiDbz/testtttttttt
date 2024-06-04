@@ -101,7 +101,7 @@ export const Header = ({ notifToken }) => {
     return (
       <div className="navbar fixed-top">
         <div className="logo-container ">
-          <a href="/home">
+          <a href="/">
             <img className="logo" src={Logo} alt="logo"></img>
           </a>
         </div>
@@ -113,7 +113,7 @@ export const Header = ({ notifToken }) => {
   return (
     <div className="navbar fixed-top">
       <div className="logo-container">
-        <a href="/home">
+        <a href="/">
           <img className="logo" src={Logo} alt="logo"></img>
         </a>
       </div>

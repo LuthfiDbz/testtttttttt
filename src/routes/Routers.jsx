@@ -24,6 +24,7 @@ import { TermConditionsDriver } from "../Pages/TermConditionsDriver";
 import { ComingSoon } from "../Pages/ComingSoon";
 import { EmailVerification } from "../Pages/EmailVerification";
 import { UpdatePassword } from "../Pages/UpdatePassword";
+import { Blog } from "../Pages/Blog";
 // import { ProtectedRoute } from './ProtectedRoute'
 
 export const Routers = () => {
@@ -62,7 +63,7 @@ export const Routers = () => {
     <BrowserRouter>
       <Header />
       <Routes>
-        <Route path="/" element={<Navigate to="home" />} />
+        <Route path="/" element={<Home />} />
         <Route path="home" element={<Home />} />
         <Route path="driver" element={<DriverPage />} />
         <Route path="mitra" element={<MitraPage />} />
@@ -71,6 +72,7 @@ export const Routers = () => {
         {/* <Route path="register" element={<Register />} /> */}
         <Route path="privacy-policy" element={<PrivacyPolicy />} />
         <Route path="about-us" element={<AboutUs />} />
+        <Route path="t3st-4rticle" element={<Blog />} />
         <Route path="terms-conditions" element={<TermsAndConditions />} />
         <Route path="terms-conditions/driver" element={<TermConditionsDriver />} />
         <Route path="faq" element={<FaqPage />} />

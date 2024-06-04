@@ -7,6 +7,7 @@ import { Footer } from "../Component/footer/Footer";
 import { useEffect } from "react";
 import { t } from "i18next";
 import { errorPopup, networkErrorPopup } from "../Component/UI/modal/PopUp/ErrorPopUp";
+import SEO from "../Component/SEO/SEO";
 
 export const TermConditionsDriver = () => {
   const [privacyData, setPrivacyData] = useState({});
@@ -28,10 +29,10 @@ export const TermConditionsDriver = () => {
     } catch (error) {
       setLoading(false);
       console.log(error.message);
-      if(error.message === 'Network Error') {
-        networkErrorPopup(t('networkErrorTitle'),t('networkErrorText'), t('reload'), t('cancel'))
+      if (error.message === 'Network Error') {
+        networkErrorPopup(t('networkErrorTitle'), t('networkErrorText'), t('reload'), t('cancel'))
       } else {
-        errorPopup(t('error'),t('somethingError'), t('close'))
+        errorPopup(t('error'), t('somethingError'), t('close'))
       }
     }
   };
@@ -40,8 +41,13 @@ export const TermConditionsDriver = () => {
   return (
     <>
       {/* <Header /> */}
+      <SEO
+        title={`Superkul | ${t('termConditions')} ${t('driver')}`}
+        description="Ketentuan Penggunaan Driver Superkul ini (“Ketentuan Penggunaan”) mengatur akses atau penggunaan Anda (“Driver”) atas platform layanan informasi (“Platform”) melalui aplikasi seluler kami, aplikasi situs web (bersama-sama disebut “Aplikasi” ) atau situs web untuk menerima layanan yang disediakan oleh PT Superkul Amerta Indonesia, suatu perusahaan yang didirikan di Indonesia dengan kantor terdaftarnya di Ruko Golden 8, Jl. Panjang No. 8, RT.5/RW.11, Kedoya Utara, Kec. Kb. Jeruk, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11520(“PT. Superkul Amertha Indonesia”)."
+        canonicalLink="https://superkul.id/terms-conditions"
+      />
       <div className="container-privacy">
-        <div className="privacy-bg" style={{backgroundImage: `url(${BgBanner})`}}>
+        <div className="privacy-bg" style={{ backgroundImage: `url(${BgBanner})` }}>
           <div className="text-container">
             <h3>{t('termConditions')} {t('driver')}</h3>
             <span>

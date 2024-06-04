@@ -8,6 +8,7 @@ import { useEffect } from "react";
 import header from "../assets/img/header-about-us.svg";
 import { Faq } from "../Component/UI/home/faq/Faq";
 import { t } from "i18next";
+import SEO from "../Component/SEO/SEO";
 
 export const FaqPage = () => {
   const [privacyData, setPrivacyData] = useState({});
@@ -17,8 +18,13 @@ export const FaqPage = () => {
   return (
     <>
       {/* <Header /> */}
+      <SEO
+        title={`Superkul | FAQ`}
+        description="Temukan jawaban dari pertanyaan yang sering ditanyakan."
+        canonicalLink="https://superkul.id/faq"
+      />
       <div className="container-privacy">
-        <div className="privacy-bg" style={{backgroundImage: `url(${BgBanner})`}}>
+        <div className="privacy-bg" style={{ backgroundImage: `url(${BgBanner})` }}>
           <div className="text-container">
             <h1>FAQ</h1>
             <span>

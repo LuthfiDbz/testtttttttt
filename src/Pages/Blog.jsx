@@ -10,7 +10,7 @@ import { useTranslation } from "react-i18next";
 import { Helmet } from "react-helmet-async";
 import SEO from "../Component/SEO/SEO";
 
-export const AboutUs = () => {
+export const Blog = () => {
   const { t } = useTranslation()
   const [privacyData, setPrivacyData] = useState({});
   const [loading, setLoading] = useState(false);
@@ -25,14 +25,14 @@ export const AboutUs = () => {
         <link rel="canonical" href="https://superkul.id/about-us" />
       </Helmet> */}
       <SEO
-        title={`Superkul | ${t('aboutUs')}sss`}
+        title={`Superkul | Blog`}
         description="Superkul adalah solusi pengiriman mil terakhir (last-mile) berbasis pendingin (chiller) di Indonesia. Superkul menyediakan layanan pengiriman padai hari yang sama menggunakan Superkul Box untuk menjaga suhu dari -22C hingga 10C. "
-        canonicalLink="https://superkul.id/about-us"
+        canonicalLink="https://superkul.id/blog"
       />
       <div className="container-privacy">
         <div className="privacy-bg" style={{ backgroundImage: `url(${BgBanner})` }}>
           <div className="text-container">
-            <h1>{t('aboutUs')}</h1>
+            <h1>Blog</h1>
             <span>
               <a href="/">{t('home')}</a> / {t('aboutUs')}
             </span>

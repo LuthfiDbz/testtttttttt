@@ -18,12 +18,12 @@ function App() {
 
   return (
     <AuthContextProvider>
-      {/* <HelmetProvider> */}
+      <HelmetProvider>
         <div className="App">
           <Routers />
           {/* <Notification /> */}
         </div>
-      {/* </HelmetProvider> */}
+      </HelmetProvider>
     </AuthContextProvider>
   );
 }

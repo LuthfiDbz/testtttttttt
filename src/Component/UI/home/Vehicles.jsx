@@ -138,7 +138,7 @@ export const Vehicles = () => {
       name: "Truk CDE Standard",
       imgUrl: imgCde,
       vehicleInfo: {
-        weightMax: "2 Tonnes",
+        weightMax: "2 Tons",
         dimension: "(290 cm x 150 cm x 150 cm)",
         temperature: "-22°C  sampai 10°C",
         area: "Jawa, Bali",
@@ -183,7 +183,7 @@ export const Vehicles = () => {
       name: "Truk CDD Standard",
       imgUrl: imgCdd,
       vehicleInfo: {
-        weightMax: "4 Tonnes",
+        weightMax: "4 Tons",
         dimension: "(400 cm x 170 cm x 175 cm)",
         temperature: "-22°C  sampai 10°C",
         area: "Jawa, Sumatra, Bali",

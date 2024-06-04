@@ -12,21 +12,19 @@ import { Guide } from "../Component/UI/home/Guide";
 import { Client } from "../Component/UI/home/Client";
 import { Partner } from "../Component/UI/home/Partner";
 import { Faq } from "../Component/UI/home/faq/Faq";
-import { Helmet } from "react-helmet";
 import { BsWhatsapp } from "react-icons/bs";
 import { ClientSlider } from "../Component/UI/home/ClientSlider";
+import SEO from "../Component/SEO/SEO";
 
 export const Home = () => {
   return (
     <>
       {/* <Header notifToken={isTokenFound}/> */}
-      <Helmet>
-        <title>Superkul Landing Page</title>
-        <meta
-          name="description"
-          content="Percayakan pengiriman barangmu yang membutuhkan suhu dingin kepada Superkul." />
-        <link rel="canonical" href="https://superkul.id/home" />
-      </Helmet>
+      <SEO
+        title="Superkul Cold Stuff Delivery"
+        description="Superkul merupakan penyedia layanan pengiriman barang/produk yang membutuhkan suhu dingin dengan menggunakan motor dan truck berpendingin Superkul."
+        canonicalLink="https://superkul.id"
+      />
       <div
         style={{
           position: "relative"
