@@ -1,7 +1,3 @@
 # Superkul Landing Page Changelog
 
-## `v1.0.0 (August 09, 2023)`
-
-### Improvement
-
-- Move routing for new sub domain
+## `v1.0.0 (July 07, 2024)`

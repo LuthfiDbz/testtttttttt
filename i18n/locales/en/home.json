@@ -1,0 +1,23 @@
+{
+  "home": {
+    "hero": {
+      "title": "We Jagonya Kirim Barang Dingin",
+      "text": "Percayakan pengiriman barangmu yang butuh suhu dingin kepada Superkul. Kami siap mengantarkan barangmu sampai ke tujuan dengan aman dan tetap dingin!",
+      "button": "Kirim Sekarang"
+    }
+  },
+  "samedayDelivery": {
+    "hero": {
+      "title": "Superkul Sameday Delivery",
+      "text": "Kirim barang berpendingin pakai motor superkul, bisa atur suhu, barang aman sampai tujuan, dan cepat sampainya",
+      "button": "Kirim Sekarang"
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "desc1": "Superkul didirikan pada tahun 2020 dan beroperasi di bawah PT. Superkul Amerta Indonesia. Kami fokus menyediakan layanan logistik untuk barang-barang yang membutuhkan suhu dingin. Dengan layanan yang beragam seperti Superkul Sameday Delivery, Sewa Motor Superkul, dan Superkul Truck, kami berkomitmen untuk memenuhi berbagai kebutuhan logistik para pelaku usaha yang memerlukan solusi suhu dingin. Kami juga menyediakan dukungan teknologi informasi melalui website dan aplikasi mobile Superkul, yang tersedia untuk perangkat Android dan iPhone.",
+    "desc2": "Berlokasi di Jl. Panjang, Kedoya Utara, Kec. Kb. Jeruk, Kota Jakarta Barat, Jakarta 11520, Superkul memiliki kantor utama. Untuk memastikan pelayanan terbaik, kami memiliki hub-hub di Jabodetabek, Bandung, Yogyakarta, dan Surabaya, serta armada motor berpendingin yang tersebar di lokasi-lokasi tersebut. Kami telah menangani berbagai kebutuhan logistik berpendingin dan dipercaya oleh banyak perusahaan besar di Indonesia."
+  },
+  "termsCond": "Terms and Conditions",
+  "privacyPolicy": "Privacy Policy"
+}

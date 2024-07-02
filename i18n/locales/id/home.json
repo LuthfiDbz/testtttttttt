@@ -1,0 +1,152 @@
+{
+  "home": {
+    "hero": {
+      "title": "Kami Jagonya Kirim Barang Dingin",
+      "text": "Percayakan pengiriman barangmu yang butuh suhu dingin kepada Superkul. Kami siap mengantarkan barangmu sampai ke tujuan dengan aman dan tetap dingin!",
+      "button": "Kirim Sekarang"
+    },
+    "whySuperkul": {
+      "title": "Mengapa harus Superkul",
+      "reason1": "Pembayaran mudah & banyak pilihan",
+      "reason2": "Pilih suhu sesuai jenis barang",
+      "reason3": "Order langsung dari platform kami",
+      "reason4": "Berpengalaman dibidang logistik berpendingin",
+      "reason5": "Dukungan berbagai teknologi canggih",
+      "reason6": "Admin yang siap membantu kapan saja",
+      "reason7": "Telah tersedia di berbagai lokasi",
+      "reason8": "Pilihan berbagai layanan yang saling terhubung"
+    }
+  },
+  "samedayDelivery": {
+    "hero": {
+      "title": "Superkul Sameday Delivery",
+      "text": "Kirim barang berpendingin pakai motor superkul, bisa atur suhu, barang aman sampai tujuan, dan cepat sampainya",
+      "button": "Kirim Sekarang"
+    },
+    "definition": {
+      "title": "Apa itu Superkul Sameday Delivery",
+      "text": "Superkul Sameday Delivery merupakan layanan pengiriman untuk barang yang membutuhkan suhu dingin dengan menggunakan motor Superkul. Motor Superkul dilengkapi dengan freezer box yang dapat diatur suhunya mulai dari 10°C hingga -22°C. Customer dapat melakukan order langsung melalui website atau aplikasi Superkul. Layanan Sameday Delivery memungkinkan customer untuk mengatur estimasi jadwal penjemputan. Customer juga dapat melakukan lebih dari satu pengiriman untuk satu kali order. Barang customer tidak akan disatukan dengan barang customer lain (satu driver mengirim barang dari satu customer)."
+    },
+    "whySameday": {
+      "reason1": "Suhu dapat diatur sesuai jenis barang",
+      "reason2": "Kurangi ice gel pack, dry ice, atau kemasan lainnya",
+      "reason3": "Multi drop dalam sekali pengiriman",
+      "reason4": "Fitur optimalisasi rute, dapat menghemat biaya",
+      "reason5": "Kualitas barang prima, kurangi kerusakan & keluhan",
+      "reason6": "Proteksi hilang & kerusakan hingga satu juta rupiah",
+      "reason7": "Jadwalkan pengiriman Anda sesuai kebutuhan Anda",
+      "reason8": "Sudah tersedia di berbagai kota di Indonesia"
+    },
+    "feature": {
+      "title": "Fitur untuk Sewa Motor & Driver Superkul",
+      "feature1": "Alamat Tersimpan",
+      "desc1": "Customer bisa menyimpan data alamat pengiriman, sehingga customer tidak perlu mengisi alamat pengiriman kembali.",
+      "feature2": "Multiple Drop",
+      "desc2": "Customer dapat melakukan pengiriman ke lebih dari satu alamat dalam satu kali order. Untuk multiple drop, sistem akan membagi pengiriman ke beberapa trip berdasarkan kapasitas maksimal box motor, serta suhu paket yang dipilih. Biaya pengiriman akan dihitung berdasarkan jarak rute pengiriman (bukan dari jarak pickup ke masing-masing drop), sehingga lebih murah",
+      "feature3": "Optimasi Rute",
+      "desc3": "Sistem superkul menyediakan fitur optimasi rute pengiriman untuk pengiriman multiple drop. fitur optimasi rute pengiriman ini berfungsi untuk mencari rute pengiriman tercepat, sehingga pengiriman lebih cepat terselesaikan dan biaya pengiriman lebih murah.",
+      "feature4": "Metode Pembayaran yang Beragam",
+      "desc4": "Superkul telah bekerja sama dengan payment gateway terpercaya di Indonesia untuk menyediakan berbagai metode pembayaran. Sistem kami sudah terintegrasi, sehingga status pembayaran akan langsung diperbarui secara otomatis setelah tagihan berhasil dibayar.",
+      "feature5": "Tracking Driver & Suhu",
+      "desc5": "Customer dapat melakukan pengecekan status pengiriman. Selain itu, customer juga dapat melihat lokasi driver serta suhu pada box motor driver ketika dalam status proses pengiriman.",
+      "feature6": "Import & Export Data",
+      "desc6": "Bagi customer yang sering melakukan rekap data pengiriman menggunakan excel. Superkul menyediakan fitur import excel untuk proses order delivery. Selain itu, kami juga menyediakan fitur export untuk data order & pengiriman."
+    },
+    "process": {
+      "title": "Proses Order Sameday Delivery",
+      "step1": "Buat Pesanan",
+      "desc1": "Isi form pembuatan order, mulai dari waktu penjemputan, alamat penjemputan, alamat pengiriman, serta data paket yang ingin dikirim.",
+      "step2": "Rencarakan perjalanan",
+      "desc2": "Rencanakan trip dengan menyesuaikan urutan atau menggunakan fitur route optimization untuk mengoptimalkan rute perjalanan",
+      "step3": "Konfirmasi Pesanan",
+      "desc3": "Konfirmasi orderan yang telah kamu buat, dan pastikan semuanya sudah benar.",
+      "step4": "Pembayaran",
+      "desc4": "Konfirmasi orderan yang telah kamu buat, dan pastikan semuanya sudah benar."
+    }
+  },
+  "dedicated": {
+    "hero": {
+      "title": "Layanan Sewa Motor Superkul",
+      "text": "Bayar sekali tanpa biaya tambahan apapun (gaji driver, bensin, biaya lain), bisa kirim kemanapun dan dapatkan berbagai manfaat dari fitur Superkul.",
+      "button": "Sewa Sekarang"
+    },
+    "definition": {
+      "title": "Apa itu Layanan Sewa Motor Superkul",
+      "text": "Kamu sekarang bisa melakukan sewa motor Superkul untuk harian maupun bulanan. Dengan menggunakan layanan sewa motor Superkul, kamu bebas kirim barang dingin kemana saja tanpa perlu biaya tambahan apapun lagi. Layanan ini sudah termasuk dengan driver Superkul, biaya bensin, layanan & fitur pada website & aplikasi Superkul, serta layanan bantuan dari Admin Superkul."
+    },
+    "serviceType": {
+      "title": "Jenis Layanan Sewa Motor Superkul",
+      "service1": "Sewa Harian Motor dan Driver",
+      "desc1": "Sewa harian untuk motor dan driver Superkul. Cukup sekali bayar, bisa kirim kemana saja tanpa biaya tambahan. Sudah termasuk Motorbike, GPS & Data Logger, Driver Salary, Fuel. Belum termasuk parkir.",
+      "service2": "Sewa Bulanan Motor dan Driver",
+      "desc2": "Sewa bulanan untuk motor dan driver Superkul. Cukup sekali bayar, bisa kirim kemana saja tanpa biaya tambahan. Sudah termasuk Motorbike, GPS & Data Logger, Driver Salary, Fuel. Belum termasuk parkir.",
+      "service3": "Sewa Motor Bulanan",
+      "desc3": "Sewa bulanan untuk motor Superkul. Cukup sekali bayar, bisa operasikan motor Superkul kapan saja. Sudah termasuk Motorbike, GPS & Data Logger. Belum termasuk Driver Salary, Fuel & Parking Fee."
+    },
+    "whyDedicated": {
+      "title": "Mengapa Sewa  Motor Superkul",
+      "reason1": "Suhu dapat diatur sesuai jenis barang",
+      "reason2": "Kurangi ice gel pack, dry ice, atau kemasan lainnya",
+      "reason3": "Didukung dengan fitur dan teknologi canggih",
+      "reason4": "Satu kali bayar, tanpa biaya tambahan (bensin, driver, dll)",
+      "reason5": "Kualitas barang prima, kurangi kerusakan & keluhan",
+      "reason6": "Proteksi hilang & kerusakan hingga satu juta rupiah",
+      "reason7": "Driver yang telah terlatih dan berpengalaman",
+      "reason8": "Admin yang siap membantu memonitoring pengiriman"
+    },
+    "CTA": {
+      "title": "Dapatkan Penawaran Spesial",
+      "text": "Hubungi kami untuk mendapatkan penawaran menarik terkait layanan sewa motor Superkul.",
+      "button": "Hubungi Kami"
+    }
+  },
+  "superkulTruck": {
+    "hero": {
+      "title": "Layanan Superkul Truck",
+      "text": "Kirim barang berpendingin ke seluruh wilayah Jawa, Bali, dan Sumatera dengan Superkul. Harga bersaing, pengiriman aman, hatipun tenang.",
+      "button": "Kirim Sekarang"
+    },
+    "definition": {
+      "title": "Apa itu Layanan Superkul Truck",
+      "text": "Superkul Truck merupakan layanan pengiriman barang dengan menggunakan truk berpendingin. Dengan Superkul Truck, pengiriman barang berpendingin ke luar kota bisa lebih aman dan barang tetap beku. Saat ini, Superkul Truck memiliki area pengiriman ke Jawa, Bali, dan Sumatera. Superkul truck juga memiliki beberapa pilihan jenis armada dan jenis layanan (LTL dan FTL)."
+    },
+    "serviceType": {
+      "title": "Jenis Layanan Superkul Truck",
+      "service1": "Less Than Truck Load (LTL)",
+      "desc1": "Kirim barang berpendingin lebih murah untuk muatan sedikit, mulai dari Rp. 5.000 per kg.  Barang dijemput dan dikirim sampai tujuan.",
+      "service2": "Full Truck Load (FTL)",
+      "desc2": "Kirim barang berpendingin dengan Superkul FTL. Pengiriman cepat, no ribet, barang dijemput dan dikirim sampai tujuan."
+    },
+    "whyTruck": {
+      "title": "Mengapa Menggunakan Superkul Truck",
+      "reason1": "Suhu dapat diatur sesuai jenis barang",
+      "reason2": "Kurangi ice gel pack, dry ice, atau kemasan lainnya",
+      "reason3": "Bisa kirim lebih dari satu alamat sekaligus",
+      "reason4": "Fitur optimalisasi rute, dapat menghemat biaya",
+      "reason5": "Kualitas barang prima, kurangi kerusakan & keluhan",
+      "reason6": "Proteksi hilang & kerusakan hingga satu juta rupiah",
+      "reason7": "Barang diambil dan dikirim sesuai alamat",
+      "reason8": "Area pengiriman ke seluruh Jawa dan Bali"
+    },
+    "type": {
+      "title": "Jenis Kendaraan yang Tersedia",
+      "vehicleInfo": "Informasi Kendaraan",
+      "dimension": "Dimensi",
+      "maxWeight": "Berat Maksimal",
+      "temp": "Suhu",
+      "tripArea": "Area Pengiriman"
+    },
+    "CTA": {
+      "title": "Dapatkan Penawaran Spesial",
+      "text": "Hubungi kami untuk mendapatkan penawaran menarik terkait layanan Superkul Truck.",
+      "button": "Hubungi Kami"
+    }
+  },
+  "about": {
+    "title": "Tentang Kami",
+    "desc1": "Superkul didirikan pada tahun 2020 dan beroperasi di bawah PT. Superkul Amerta Indonesia. Kami fokus menyediakan layanan logistik untuk barang-barang yang membutuhkan suhu dingin. Dengan layanan yang beragam seperti Superkul Sameday Delivery, Sewa Motor Superkul, dan Superkul Truck, kami berkomitmen untuk memenuhi berbagai kebutuhan logistik para pelaku usaha yang memerlukan solusi suhu dingin. Kami juga menyediakan dukungan teknologi informasi melalui website dan aplikasi mobile Superkul, yang tersedia untuk perangkat Android dan iPhone.",
+    "desc2": "Berlokasi di Jl. Panjang, Kedoya Utara, Kec. Kb. Jeruk, Kota Jakarta Barat, Jakarta 11520, Superkul memiliki kantor utama. Untuk memastikan pelayanan terbaik, kami memiliki hub-hub di Jabodetabek, Bandung, Yogyakarta, dan Surabaya, serta armada motor berpendingin yang tersebar di lokasi-lokasi tersebut. Kami telah menangani berbagai kebutuhan logistik berpendingin dan dipercaya oleh banyak perusahaan besar di Indonesia."
+  },
+  "termsCond": "Syarat dan Ketentuan",
+  "privacyPolicy": "Kebijakan Privasi"
+}
